@@ -15,17 +15,87 @@ $secondarycolor: #3E8760;
     width: 100%;
     position: fixed;
     z-index: 99;
-
+   // height: 7em;
     flex-basis: 100%;
     align-content: center;
     align-items: baseline;
-    padding-top: 3%;
-    
+   // background: white;
+    padding-top: 3em;
+
+
+  &__blank--left{
+     display: flex;
+    height: 100%;
+    flex-basis: 20%;
+   // background: yellow;
+
+
+    &-space{
+      width: 40%;
+      height: 100%;
+  //    background: pink;
+    }
+
+    &-title{
+     width: 60%;
+     height: 100%;
+    //  background: green;  
+      padding-left: 50%;
+
+    }
+
+    &-title h1{
+      font-size: 30px;
+      font-family: 'Playfair Display', serif;
+      font-weight: 900i;
+      color: $textcolor;
+    }
+  }
+
+  &__blank--middle{
+    height: 100%;
+    flex-basis: 10%;
+  // background: blue;
+
+    &--2{
+      width: 10%;
+      height: 100%;
+   //   background: pink;
+    }
+
+
+  }
+
+  &__blank--list{
+    height: 100%;
+    flex-basis: 55%;
+   // background: green;
+  }
+
+  &__blank--icons{
+    height: 100%;
+    flex-basis: 25%;
+   // background: cyan;
+    display: flex;
+  }
+
+
+
+/*
+    &__prin{
+      height: 100%;
+      width: 1em;
+      background: yellow;
+
+    }
+
+   
 
     &__prin--head{
        
-        margin-left: 60px;
+     margin-left: 60px;
      padding-right: 20%;
+     background: yellow;
    
         
         
@@ -36,9 +106,10 @@ $secondarycolor: #3E8760;
         font-weight: 900i;
         color: $textcolor;
       
+      
         
     }  
-
+*/
     &__secu{
 
         display: flex;
@@ -48,6 +119,7 @@ $secondarycolor: #3E8760;
         margin-right: 80px;
         justify-content: flex-end;
         color: $textcolor;
+
  
  
         &--search{
@@ -55,20 +127,23 @@ $secondarycolor: #3E8760;
            margin-left: 10%;
             padding-left: 10px;
           margin-right: 20%;
+          font-size: 20px;
          
         }
         &--user{
             margin-right: 20%;
-            font-size: 28px;
+            font-size: 20px;
         }
 
         &--item{
-            font-size: 28px;
+            font-size: 20px;
         }
     }
+
+    
     
     }
-
+/*
     //WHAT
     #content {
         position: absolute;
@@ -210,43 +285,28 @@ $secondarycolor: #3E8760;
       }
 
     //WHAT
-    
+    */
+   
     .flex-container {
-        
-       padding-left: 40%;
         list-style: none;
-        
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
         display: flex;
-        width: 100%;
         flex-basis: 100%;        
         -webkit-flex-flow: row wrap;
-        justify-content: flex-end;
-        list-style: none;
-        
+        justify-content: space-between;
+        list-style: none; 
       }
       
       .flex-item {
-     
-        padding-left: 15%;
-        padding-right: 25%;
-        width: 25%;
+
         font-family: 'Lato', sans-serif;
         font-weight: 300;
-       
-    
-        
-        font-weight: bold;
-        font-size: 1em;
-        text-align: center;
+      
 
         &-woman{
 
             text-decoration: none;
             font-weight: none;
+            
 
             //text-decoration: line-through;
            // font-weight: bold;
@@ -275,6 +335,8 @@ $secondarycolor: #3E8760;
         color: $textcolor;
         font-weight: 400;
       }
+
+    
 
 
 .leftsidebar{
@@ -1784,5 +1846,143 @@ padding: 0;
     padding-left: 20%;
    
 }
+
+//TIENDA
+//TIENDA
+//TIENDA
+//TIENDA
+//TIENDA
+//TIENDA
+//TIENDA
+//TIENDA
+
+.blanktop__space{
+  
+  position: fixed;
+  width: 100%;
+  height: 8em;
+  background: rgba($color: white, $alpha: 0.90);
+
+  &-nav{
+    width: 100%;
+    height: 6em;
+    background: white;
+  //  display: flex;
+
+
+    &--list{
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+
+    }
+  }
+}
+
+.topfilterbar__space{
+
+ 
+}
+
+.filter__top{
+  display: flex;
+
+  
+}
+
+.space{
+  height: 8em;
+  width: 100%;
+  background: yellow;
+}
+
+.blankspace__promo{
+  display: flex;
+  height: 22em;
+  width: 100%;
+  background: blue;
+
+  &-left{
+    width: 5%;
+    height: 100%;
+    background: pink;
+  }
+  &-middle{
+    width: 90%;
+    height: 100%;
+    background: cyan;
+  }
+  &-right{
+    width: 5%;
+    height: 100%;
+    background: pink;
+  }
+  &-list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+   // background: red;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.promo__item{
+width: 20em;
+height: 20em;
+background: #3E8760;
+
+&-1{
+  background-image: url("../imagenes/item5.jpg");
+  background-size: cover;
+
+}
+&-2{
+  background-image: url("../imagenes/item4.jpg");
+  background-size: cover;
+
+}
+&-3{
+  background-image: url("../imagenes/item3.jpg");
+  background-size: cover;
+
+}
+&-4{
+  background-image: url("../imagenes/women2.jpg");
+  background-size: cover;
+
+}
+}
+
+.content{
+  width: 100%;
+  background: yellow;
+  display: flex;
+}
+
+.right__filterbar{
+  width: 20%;
+  
+
+}
+
+.womens__products{
+  width: 70%;
+  
+
+
+  &-list{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    height: auto;
+
+    &--item{
+
+    }
+  }
+}
+
+
 
 

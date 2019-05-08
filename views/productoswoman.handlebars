@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Voltio Tienda</title>
+    <link rel='stylesheet' href='./style/main.css' />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="nav__blank--left">
+            <div class="nav__blank--left-space">
+                <div class="nav__blank--left-title">
+                    <h1>VOLTIO</h1>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="nav__blank--middle">
+            <div class="nav__blank--middle--2">
+
+            </div>
+        </div>
+
+        <div class="nav__blank--list">
+
+            <ul class="flex-container">
+                <li class="flex-item flex-item-woman" id="cambiarwoman"><a href="/tienda">Woman</a> </li>
+                <li class="flex-item" id="cambiarman"><a href="#">Man</a> </li>
+                <li class="flex-item flex-item-kids" id="cambiarkids"><a href="#">Kids</a> </li>
+                <li class="flex-item flex-item-gifts" id="cambiarsale"><a href="#">Sale</a> </li>
+
+            </ul>
+        </div>
+
+        <div class="nav__blank--icons">
+
+            <div class="nav__secu">
+                <div class="nav__secu--search">
+
+                    <i class="fas fa-search"></i>
+
+                </div>
+                <div class="nav__secu--user">
+                    <i class="fas fa-user"></i>
+
+                </div>
+                <div class="nav__secu--item">
+                    <i class="fas fa-shopping-bag"></i>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="blanktop__space">
+
+        <div class="blanktop__space-nav">
+
+        </div>
+
+
+
+        <ul class="blanktop__space-nav--list">
+            <li><a href="">All womens</a></li>
+            <li><a href="">Tops</a></li>
+            <li><a href="">Bottoms</a></li>
+            <li><a href="">Dresses</a></li>
+            <li><a href="">Jackets</a></li>
+        </ul>
+
+
+
+    </div>
+
+    <div class="topfilterbar__space">
+
+    </div>
+
+    <div class="space"></div>
+
+    <div class="blankspace__promo">
+        <div class="blankspace__promo-left"></div>
+        <div class="blankspace__promo-middle">
+
+            <ul class="blankspace__promo-list">
+                <div class="promo__item promo__item-1">
+                    <h1>TOPS</h1>
+                </div>
+                <div class="promo__item promo__item-2">
+                    <h1>BOTTOMS</h1>
+                </div>
+                <div class="promo__item promo__item-3">
+                    <h1>DRESSES</h1>
+                </div>
+                <div class="promo__item promo__item-4">
+                    <h1>JACKETS</h1>
+                </div>
+
+            </ul>
+        </div>
+        <div class="blankspace__promo-right"></div>
+    </div>
+
+    <div class="content">
+        <div class="right__filterbar"></div>
+
+        <div class="womens__products">
+            <ul class="womens__products-list">
+                {{#each productos}}
+
+                <div class="womens__products-list--item">
+                    <p></p>
+                <img src="{{imagenes.[1]}}" width="200px">
+                <li>{{name}}</li>
+                <p>{{price}}</p>
+                </div>
+
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+
+</html>

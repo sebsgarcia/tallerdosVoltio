@@ -1,18 +1,411 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Voltio</title>
+    <link rel='stylesheet' type='text/css' href='./style/main.css' />
+
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="style/jquery.fullpage.js"></script>
+
+    <script src="./style/script.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Playfair+Display:900i" rel="stylesheet">
+
+
+
 </head>
+
 <body>
-    {{#each productos}}
-    <article>
-        <h1>{{name}}</h1>
-    </article>
-    {{/each}}
-    
+
+    <div class="nav">
+        <div class="nav__blank--left">
+            <div class="nav__blank--left-space">
+                <div class="nav__blank--left-title">
+                    <h1>VOLTIO</h1>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="nav__blank--middle">
+            <div class="nav__blank--middle--2">
+
+            </div>
+        </div>
+
+        <div class="nav__blank--list">
+
+            <ul class="flex-container">
+                <li class="flex-item flex-item-woman" id="cambiarwoman"><a href="/woman">Woman</a> </li>
+                <li class="flex-item" id="cambiarman"><a href="#">Man</a> </li>
+                <li class="flex-item flex-item-kids" id="cambiarkids"><a href="#">Kids</a> </li>
+                <li class="flex-item flex-item-gifts" id="cambiarsale"><a href="#">Sale</a> </li>
+
+            </ul>
+        </div>
+
+        <div class="nav__blank--icons">
+
+                <div class="nav__secu">
+                        <div class="nav__secu--search">
+
+            
+                           <i class="fas fa-search"></i> 
+            
+                        </div>
+                        <div class="nav__secu--user">
+                            <i class="fas fa-user"></i>
+            
+                        </div>
+                        <div class="nav__secu--item">
+                            <i class="fas fa-shopping-bag"></i>
+            
+                        </div>
+             
+                    </div>
+        </div>
+
+
+        <!--
+        <div class="nav__prin">
+            <div class="nav__prin--head">
+                <h1 class="nav__prin--logo"> VOLTIO </h1>
+            </div>
+            <div class="nav__blank">
+            </div>
+      </div>
+ -->
+        <!--
+        <ul class="flex-container">
+            <li class="flex-item flex-item-woman" id="cambiarwoman"><a href="#">Woman</a> </li>
+            <li class="flex-item flex-item-man" id="cambiarman"><a href="#">Man</a> </li>
+            <li class="flex-item flex-item-kids" id="cambiarkids"><a href="#">Kids</a> </li>
+            <li class="flex-item flex-item-gifts" id="cambiarsale"><a href="#">Sale</a> </li>
+
+        </ul>
+
+          -->
+
+
+        <!--
+        <div class="nav__secu">
+            <div class="nav__secu--search">
+
+                <form id="content">
+                    <input type="text" name="input" class="input">
+                    <button type="reset" class="search"></button>
+                </form>
+
+               <i class="fas fa-search"></i> 
+
+            </div>
+            <div class="nav__secu--user">
+                <i class="fas fa-user"></i>
+
+            </div>
+            <div class="nav__secu--item">
+                <i class="fas fa-shopping-bag"></i>
+
+            </div>
+ 
+        </div>
+        -->
+
+    </div>
+
+
+
+    <div class="leftsidebar">
+        <h2 class="leftsidebar__item leftsidebar__item--1">EST 2019</h2>
+        <h2 class="leftsidebar__item leftsidebar__item--2">New Arrivals</h2>
+    </div>
+
+    <div class="rightsidebar">
+        <ul class="rightsidebar__list">
+            <li class="rightsidebar__list--child rightsidebar__list--child-1"><a href="#">JOIN LIFE</a></li>
+            <li class="rightsidebar__list--child rightsidebar__list--child-2"><a href="#">EDITORIALS</a></li>
+            <li class="rightsidebar__list--child rightsidebar__list--child-3"><a href="#">INFO++</a></li>
+        </ul>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer__blanktop"></div>
+        <div class="footer__blankbot">
+            <div class="footer__blankbot-iz">
+                <div class="footer__blankbot-iz-cont">
+                    <div class="footer__blankbot-iz-blank"></div>
+                    <h3 class="footer__blankbot-iz-text">Subscribe to Newsletter</h3>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="footer__blankbot-der">
+                <div class="footer__blankbot-der-cont">
+                    <i class="fab fa-facebook-f icon"></i>
+                    <i class="fab fa-twitter icon"></i>
+                    <i class="fab fa-instagram icon"></i>
+                    <i class="fab fa-youtube icon"></i>
+                </div>
+            </div>
+
+        </div>
+        <div>
+
+        </div>
+    </footer>
+
+    <div class="fondo" id="fondo">
+        <div class="fondo__blank1">
+
+            <div class="fondo__blank1-iztop"></div>
+            <div class="fondo__blank1-izbot" id="cambiarfondo"></div>
+        </div>
+        <div class="fondo__blank2">
+        </div>
+        <div class="fondo__blank3">
+            <div class="fondo__blank3-iztop" id="cambiarfondo2"></div>
+            <div class="fondo__blank3-izbot">
+
+                <div class="fondo__blank3-izbot--1"></div>
+                <div class="fondo__blank3-izbot--2" id="cambiarfondo3"></div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div id="fullpage">
+
+        <section class="cont">
+            <div class="cont__blank"></div>
+            <div class="cont__blank2">
+
+                <div class="cont__blank2-top"></div>
+                <div class="cont__blank2-middle">
+                    <h1 class="cont__blank2-middle--title"> 1. Intro</h1>
+                    <p class="cont__blank2-middle--para"> Voltio is a fresh urban fashion platform with a unique style
+                        created to provide authentic services.
+                    </p>
+                    <nav class="cont__blank2-middle--nav">
+                        <ul id="main">
+                            <li><i class="fas fa-grip-lines"></i>
+                                <ul class="drop" style="font-size:15px">
+                                    <div>
+                                        <li>New Collections</li>
+                                        <li>Spring Arrivals</li>
+                                        <li>Featured Items</li>
+                                    </div>
+                                </ul>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="cont__blank2-bottom"></div>
+
+            </div>
+            <div class="cont__blank3">
+                <div class="cont__blank3-top"></div>
+                <div class="cont__blank3-middle">
+                </div>
+                <div class="cont__blank3-bottom"></div>
+            </div>
+            <div class="cont__blank4">
+                <div class="cont__blank4-top"></div>
+                <div class="cont__blank4-middle"></div>
+                <div class="cont__blank4-bottom"></div>
+            </div>
+            <div class="cont__blank5"></div>
+        </section>
+
+
+        <section class="s2cont">
+            <div class="s2cont__blank"></div>
+            <div class="s2cont__blank2">
+
+                <div class="s2cont__blank2-top"></div>
+                <div class="s2cont__blank2-middle">
+                    <h1 class="s2cont__blank2-middle--title"> 2. Woman</h1>
+                    <p class="s2cont__blank2-middle--para"> Here is the latest trending apereal just a few clicks aways.
+                        Navigate through our specially selected products just for you.
+                    </p>
+                    <nav class="s2cont__blank2-middle--nav">
+                        <ul id="main">
+                            <li><i class="fas fa-grip-lines"></i>
+                                <ul class="drop" style="font-size:15px">
+                                    <div>
+                                        <li>Basics</li>
+                                        <li>Outwear</li>
+                                        <li>Jackets</li>
+                                    </div>
+                                </ul>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="s2cont__blank2-bottom"></div>
+
+            </div>
+            <div class="s2cont__blank3">
+                <div class="s2cont__blank3-top"></div>
+                <div class="s2cont__blank3-middle"></div>
+                <div class="s2cont__blank3-bottom"></div>
+            </div>
+            <div class="s2cont__blank4">
+                <div class="s2cont__blank4-top"></div>
+                <div class="s2cont__blank4-middle"></div>
+                <div class="s2cont__blank4-bottom"></div>
+            </div>
+            <div class="s2cont__blank5"></div>
+        </section>
+
+
+
+
+        <section class="s3cont">
+            <div class="s3cont__blank"></div>
+            <div class="s3cont__blank2">
+
+                <div class="s3cont__blank2-top"></div>
+                <div class="s3cont__blank2-middle">
+                    <h1 class="s3cont__blank2-middle--title"> 3. Man</h1>
+                    <p class="s3cont__blank2-middle--para"> Fresh outfits ready to stock up in your closet. We bring you
+                        unique styles for you to rock your day.
+                    </p>
+                    <nav class="s3cont__blank2-middle--nav">
+                        <ul id="main">
+                            <li><i class="fas fa-grip-lines"></i>
+                                <ul class="drop" style="font-size:15px">
+                                    <div>
+                                        <li>Jeans</li>
+                                        <li>Shorts</li>
+                                        <li>Bags</li>
+                                    </div>
+                                </ul>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="s3cont__blank2-bottom"></div>
+
+            </div>
+            <div class="s3cont__blank3">
+                <div class="s3cont__blank3-top"></div>
+                <div class="s3cont__blank3-middle"></div>
+                <div class="s3cont__blank3-bottom"></div>
+            </div>
+            <div class="s3cont__blank4">
+                <div class="s3cont__blank4-top"></div>
+                <div class="s3cont__blank4-middle"></div>
+                <div class="s3cont__blank4-bottom"></div>
+            </div>
+            <div class="s3cont__blank5"></div>
+        </section>
+
+
+
+
+        <section class="s4cont">
+            <div class="s4cont__blank"></div>
+            <div class="s4cont__blank2">
+
+                <div class="s4cont__blank2-top"></div>
+                <div class="s4cont__blank2-middle">
+                    <h1 class="s4cont__blank2-middle--title"> 4. Kids</h1>
+                    <p class="s4cont__blank2-middle--para"> Voltio is a fresh urban fashion platform with a unique style
+                        created to provide authentic services.
+                    </p>
+                    <nav class="s4cont__blank2-middle--nav">
+                        <ul id="main">
+                            <li><i class="fas fa-grip-lines"></i>
+                                <ul class="drop" style="font-size:15px">
+                                    <div>
+                                        <li>Sweaters</li>
+                                        <li>Socks</li>
+                                        <li>Accesories</li>
+                                    </div>
+                                </ul>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="s4cont__blank2-bottom"></div>
+
+            </div>
+            <div class="s4cont__blank3">
+                <div class="s4cont__blank3-top"></div>
+                <div class="s4cont__blank3-middle">
+
+                </div>
+                <div class="s4cont__blank3-bottom"></div>
+            </div>
+            <div class="s4cont__blank4">
+                <div class="s4cont__blank4-top"></div>
+                <div class="s4cont__blank4-middle"></div>
+                <div class="s4cont__blank4-bottom"></div>
+            </div>
+            <div class="s4cont__blank5"></div>
+        </section>
+
+
+        <section class="s5cont">
+            <div class="s5cont__blank"></div>
+            <div class="s5cont__blank2">
+
+                <div class="s5cont__blank2-top"></div>
+                <div class="s5cont__blank2-middle">
+                    <h1 class="s5cont__blank2-middle--title">5. Sale</h1>
+                    <p class="s5cont__blank2-middle--para"> Voltio is a fresh urban fashion platform with a unique style
+                        created to provide authentic services.
+                    </p>
+                    <nav class="s5cont__blank2-middle--nav">
+                        <ul id="main">
+                            <li><i class="fas fa-grip-lines"></i>
+                                <ul class="drop" style="font-size:15px">
+                                    <div>
+                                        <li>Clearance</li>
+                                        <li>Discounts</li>
+                                        <li>Promos</li>
+                                    </div>
+                                </ul>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="s5cont__blank2-bottom"></div>
+
+            </div>
+            <div class="s5cont__blank3">
+                <div class="s5cont__blank3-top"></div>
+                <div class="s5cont__blank3-middle"></div>
+                <div class="s5cont__blank3-bottom"></div>
+            </div>
+            <div class="s5cont__blank4">
+                <div class="s5cont__blank4-top"></div>
+                <div class="s5cont__blank4-middle"></div>
+                <div class="s5cont__blank4-bottom"></div>
+            </div>
+            <div class="s5cont__blank5"></div>
+        </section>
+
+
+
+    </div>
+
+    <script type="text/javascript">
+        $('#fullpage').fullpage();
+    </script>
+
+
+    <script src="/style/script.js"></script>
+
 </body>
+
 </html>

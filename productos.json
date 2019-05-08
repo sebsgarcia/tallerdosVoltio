@@ -1,0 +1,42 @@
+[
+    {
+        "name":"Jojo Oversized Thermal Button-Front Top",
+        "image":"/imagenes/item1.jpg",
+        "price":"59.99",
+        "color":["yellow","red","pink","green"],
+        "size":["XS","S","M","L"],
+        "details":"Look so good without even trying in this effortlessly versatile thermal button-front top by Out From Under. Long sleeve, slouchy fit silhouette with dropped shoulder seams, shirttail hem and button closure down front."
+
+    },
+    {
+        "name":"Oversized leather jacket",
+        "image":"/imagenes/women1.jpg",
+        "price":"89.99",
+        "color":["black","yellow"],
+        "size":["XS","S","M","L"],
+        "details":"Great for gray days and wet weather. Stylish jacket that goes out with every outfit"
+
+    },
+    {
+        
+        "name":"70s Short",
+        "image":"/imagenes/sale3.jpg",
+        "price":"49.99",
+        "color":"red",
+        "size":["XS","S","M","L"],
+        "details":"Your perfect shorts for the hot summer days"
+
+    },
+    {
+        
+        "name":"",
+        "image":"",
+        "price":"",
+        "color":"",
+        "size":"",
+        "details":""
+
+    }
+   
+   
+]
