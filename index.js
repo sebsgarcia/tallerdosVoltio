@@ -37,7 +37,7 @@ client.connect(function (err) {
 app.use(express.static('public'));
 //para registrar el motor de render de handlebars
 app.engine('handlebars', hbs());
-//para setear el motor de render a utilizar
+//para setear el mortor de render a utilizar
 app.set('view engine', 'handlebars');
 
 var shirts = require('./productos');
@@ -55,21 +55,29 @@ app.get('/', function (request, response) {
     response.render('home', contexto);
 });
 
-app.get('/woman', function (request, response) {
+app.get('/tienda/:category?', function (request, response) {
+
+   // console.log(request.params.type);
+   var query = {};
+
+   if(request.params.category){
+       query.category = request.params.category;
+   }
 
     var productos = db.collection('productos');
-    productos.find({}).toArray(function (err, docs) {
+    productos.find(query).toArray(function (err, docs) {
         assert.equal(null, err);
 
          var contexto = {
-             productos: docs
+             productos: docs,
+             category: request.params.category,
          
          };
-         response.render('productoswoman', contexto);
+         response.render('tienda', contexto);
     }); 
 
 });
 
-app.listen(3000, function () {
+app.listen(4000, function () {
     console.log('Cargo');
 });

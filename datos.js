@@ -129,7 +129,115 @@ module.exports = [
     price:"59.00",
     size:"S"
 }
-
+//mens
+,
+{
+    name:"SolarHu Pocket Tee",
+    imagenes:"/imagenes/hombres/tees/item1/item1.jpg",
+    category:"mens",
+    desc:"Cotton jersey tee from adidas X Pharrell Williams featuring allover pattern and patch pocket at the chest. Finished with contrast taping down both sleeves and contrast ribbed crew-neck. ",
+    type:"tees",
+    price:"60.00",
+    size:"S"
+}
+,
+{
+    name:"Long Sleeve Polo ",
+    imagenes:"/imagenes/hombres/tees/item2/item1.jpg",
+    category:"mens",
+    desc:"Luxe velour polo shirt from Lazy Oaf in a long sleeve construction, featuring contrast striping down either side of the chest + Lazy Oaf branding in the center.",
+    type:"tees",
+    price:"99.00",
+    size:"S"
+},
+{
+    name:"Terry Stripe Baseball Jersey",
+    imagenes:"/imagenes/hombres/tees/item3/item1.jpg",
+    category:"mens",
+    desc:"Comfy button-down jersey from Urban Outfitters, complete with a cotton-poly build in a classic baseball jersey silhouette. ",
+    type:"tees",
+    price:"49.00",
+    size:"S"
+}
+,
+{
+    name:"Exclusive Nylon Track Jacket",
+    imagenes:"/imagenes/hombres/jackets/item1/item1.jpg",
+    category:"mens",
+    desc:"Comfy button-down jersey from Urban Outfitters, complete with a cotton-poly build in a classic baseball jersey silhouette. ",
+    type:"jackets",
+    price:"79.99",
+    size:"S"
+}
+,
+{
+    name:"Meadowland Track Jacket",
+    imagenes:"/imagenes/hombres/jackets/item2/item1.jpg",
+    category:"mens",
+    desc:"Meadowland track jacket offers a poly construction with colorblocked chevron detailing. Standard fit jacket is complete with full-length zip front closure with pull ring. ",
+    type:"jackets",
+    price:"69.99",
+    size:"S"
+}
+,
+{
+    name:"UO Side Tape Wind Pant",
+    imagenes:"/imagenes/hombres/bottoms/item1/item1.jpg",
+    category:"mens",
+    desc:"Side tape wind pants from Urban Outfitters. Pull-on silhouette offers elastic banding at the cuffs and contrast taping down both legs. ",
+    type:"bottoms",
+    price:"89.99",
+    size:"S"
+}
+,
+{
+    name:"Oscar Track Pant",
+    imagenes:"/imagenes/hombres/bottoms/item2/item1.jpg",
+    category:"mens",
+    desc:"Slouchy track pants from Urban Outfitters, featuring sporty side stripes + pintuck detailing. Poly tricot is cut slim and topped with an elastic waistband + adjustable drawstring for a perfect fit. ",
+    type:"bottoms",
+    price:"49.99",
+    size:"S"
+}
+,
+{
+    name:"UO Side Tape Wind Pant",
+    imagenes:"/imagenes/hombres/bottoms/item3/item1.jpg",
+    category:"mens",
+    desc:"Side tape wind pants from Urban Outfitters. Pull-on silhouette offers elastic banding at the cuffs and contrast taping down both legs. ",
+    type:"bottoms",
+    price:"59.99",
+    size:"S"
+}
+,
+{
+    name:"Nike Air Tailwind 79 Sneaker",
+    imagenes:"/imagenes/hombres/shoes/item1/item1.jpg",
+    category:"mens",
+    desc:"A throwback from the 1978 marathon season, Nike’s Air Tailwind revolutionized feel and support. The brand would never be the same. ",
+    type:"shoes",
+    price:"90.99",
+    size:"S"
+}
+,
+{
+    name:"Puma X MTV RS-X Tracks Sneaker",
+    imagenes:"/imagenes/hombres/shoes/item2/item1.jpg",
+    category:"mens",
+    desc:"Puma kicks with major ‘80s flair, featuring MTV logo icons and a silhouette + colorscape with major ‘80s vibes. Ultra-chunky silhouette offers a mesh upper with leather overlays, front lace closure and a padded collar + tongue. ",
+    type:"shoes",
+    price:"120.99",
+    size:"S"
+},
+{
+    name:"Puma X MTV RS-X Tracks Sneaker",
+    imagenes:"/imagenes/hombres/shoes/item3/item1.jpg",
+    category:"mens",
+    desc:"With visible Air-Sole and fluid design lines, the Air Max 98 from Nike is a stand-out for sure. Textile + synthetic upper offers premium support while foam sole with Max Air . ",
+    type:"shoes",
+    price:"200.99",
+    size:"S"
+}
 
 
 
