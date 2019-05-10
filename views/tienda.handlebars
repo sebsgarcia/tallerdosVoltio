@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Voltio Tienda</title>
-    <link rel='stylesheet' href='./style/main.css' />
+  
+
+    <link rel="stylesheet" href="./style/main.css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-
+    <script src="./style/script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Playfair+Display:900i" rel="stylesheet">
 </head>
 
@@ -35,8 +38,9 @@
         <div class="nav__blank--list">
 
             <ul class="flex-container">
-                <li class="flex-item flex-item-woman" id="cambiarwoman" style="text-decoration: line-through"><a href="/tienda/womens">Woman</a> </li>
-                <li class="flex-item" id="cambiarman"><a href="/tienda/mens">Man</a> </li>
+                <li class="flex-item flex-item-woman" id="cambiarwoman" ><a
+                        href="/tienda?category=womens">Woman</a> </li>
+                <li class="flex-item" id="cambiarman"><a href="/tienda?category=mens">Man</a> </li>
                 <li class="flex-item flex-item-kids" id="cambiarkids"><a href="#">Kids</a> </li>
                 <li class="flex-item flex-item-gifts" id="cambiarsale"><a href="#">Sale</a> </li>
 
@@ -64,7 +68,6 @@
         </div>
     </div>
 
-
     <div class="blanktop__space">
 
         <div class="blanktop__space-nav">
@@ -72,6 +75,7 @@
         </div>
 
 
+<!--   
 
         <ul class="blanktop__space-nav--list">
             <li><a href="">All womens</a></li>
@@ -82,35 +86,41 @@
         </ul>
 
 
+-->
 
     </div>
 
 
-
     <div class="space"></div>
+
+    {{#if esWomens}}
 
     <div class="blankspace__promo">
         <div class="blankspace__promo-left"></div>
         <div class="blankspace__promo-middle">
 
             <ul class="blankspace__promo-list">
-                <div class="promo__item promo__item-1">
-                    <h1>TOPS</h1>
+                <div class="promo__item promo__item-1wom">
+                    <h1 class="promo__item-text">Tops</h1>
                 </div>
-                <div class="promo__item promo__item-2">
-                    <h1>BOTTOMS</h1>
+                <div class="promo__item promo__item-2wom">
+                    <h1 class="promo__item-text">Bottoms</h1>
                 </div>
-                <div class="promo__item promo__item-3">
-                    <h1>DRESSES</h1>
+                <div class="promo__item promo__item-3wom">
+                    <h1 class="promo__item-text">Dresses</h1>
                 </div>
-                <div class="promo__item promo__item-4">
-                    <h1>JACKETS</h1>
+                <div class="promo__item promo__item-4wom">
+                    <h1 class="promo__item-text">Jackets</h1>
                 </div>
 
             </ul>
         </div>
         <div class="blankspace__promo-right"></div>
     </div>
+
+    {{/if}}
+
+
 
     <div class="content">
         <div class="content__left-filterbar">
@@ -122,11 +132,24 @@
         <div class="womens__products">
 
             <div class="womens__products-filtertop">
-                <p>precio</p>
-                <input type="range" name="" id="">
+
+                {{#if esMens}}
+
+                <label>ingresa el rango de precio</label>
+                <input type="range" min="10" max="250">
+
+                {{/if}}
+                {{#if esWomens}}
+
+                <label>ingresa el rango de precio</label>
+                <input type="range" min="10" max="250>
+
+                {{/if}}
+
+
             </div>
 
-            <div class="womens__products-content">
+            <div class=" womens__products-content">
 
                 <ul class="womens__products-list">
                     {{#each productos}}

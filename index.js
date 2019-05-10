@@ -34,7 +34,7 @@ client.connect(function (err) {
 });
 
 //Definir la carpeta public
-app.use(express.static('public'));
+app.use(express.static (__dirname +'/public'));
 //para registrar el motor de render de handlebars
 app.engine('handlebars', hbs());
 //para setear el mortor de render a utilizar
@@ -60,17 +60,19 @@ app.get('/tienda/:category?', function (request, response) {
    // console.log(request.params.type);
    var query = {};
 
-   if(request.params.category){
-       query.category = request.params.category;
+   if(request.query.category){
+       query.category = request.query.category;
    }
 
-    var productos = db.collection('productos');
+    const productos = db.collection('productos');
     productos.find(query).toArray(function (err, docs) {
         assert.equal(null, err);
 
          var contexto = {
              productos: docs,
-             category: request.params.category,
+             category: request.query.category,
+             esMens: request.query.category == "mens",
+             esWomens: request.query.category == "womens"
          
          };
          response.render('tienda', contexto);

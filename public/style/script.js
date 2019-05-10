@@ -8,4 +8,10 @@ function expand() {
     }
   }
   $('button').on('click', expand);
-  
+
+
+  var rango = document.querySelector('.input-rango');
+  function buscarPorPrecio(){
+    console.log(rango.value);
+  }
+  rango.addEventListener('input', buscarPorPrecio);

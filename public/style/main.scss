@@ -1871,8 +1871,8 @@ padding: 0;
   
   position: fixed;
   width: 100%;
-  height: 8em;
-  background: rgba($color: white, $alpha: 0.90);
+  height: 6em;
+  background: white;
 
   &-nav{
     width: 100%;
@@ -1910,7 +1910,7 @@ padding: 0;
 }
 
 .space{
-  height: 8em;
+  height: 6em;
   width: 100%;
  // background: yellow;
 }
@@ -1950,23 +1950,37 @@ padding: 0;
 width: 20em;
 height: 20em;
 background: #3E8760;
+display: flex;
+justify-content: center;
 
-&-1{
+&-text{
+  display: flex;
+  font-size: 50px;
+  color: white; 
+  font-family: 'Playfair Display', serif;
+      font-weight: 900i;
+      align-self: center;
+     
+     
+     
+}
+
+&-1wom{
   background-image: url("../imagenes/item5.jpg");
   background-size: cover;
 
 }
-&-2{
+&-2wom{
   background-image: url("../imagenes/item4.jpg");
   background-size: cover;
 
 }
-&-3{
+&-3wom{
   background-image: url("../imagenes/item3.jpg");
   background-size: cover;
 
 }
-&-4{
+&-4wom{
   background-image: url("../imagenes/women2.jpg");
   background-size: cover;
 
