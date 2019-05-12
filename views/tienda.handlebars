@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Voltio Tienda</title>
-  
+
 
     <link rel="stylesheet" href="./style/main.css">
 
@@ -38,8 +38,8 @@
         <div class="nav__blank--list">
 
             <ul class="flex-container">
-                <li class="flex-item flex-item-woman" id="cambiarwoman" ><a
-                        href="/tienda?category=womens">Woman</a> </li>
+                <li class="flex-item flex-item-woman" id="cambiarwoman"><a href="/tienda?category=womens">Woman</a>
+                </li>
                 <li class="flex-item" id="cambiarman"><a href="/tienda?category=mens">Man</a> </li>
                 <li class="flex-item flex-item-kids" id="cambiarkids"><a href="#">Kids</a> </li>
                 <li class="flex-item flex-item-gifts" id="cambiarsale"><a href="#">Sale</a> </li>
@@ -75,7 +75,7 @@
         </div>
 
 
-<!--   
+        <!--   
 
         <ul class="blanktop__space-nav--list">
             <li><a href="">All womens</a></li>
@@ -119,6 +119,32 @@
     </div>
 
     {{/if}}
+    {{#if esMens}}
+
+    <div class="blankspace__promo">
+        <div class="blankspace__promo-left"></div>
+        <div class="blankspace__promo-middle">
+
+            <ul class="blankspace__promo-list">
+                <div class="promo__item promo__item-1men">
+                    <h1 class="promo__item-text">Tees</h1>
+                </div>
+                <div class="promo__item promo__item-2men">
+                    <h1 class="promo__item-text">Bottoms</h1>
+                </div>
+                <div class="promo__item promo__item-3men">
+                    <h1 class="promo__item-text">Jackets</h1>
+                </div>
+                <div class="promo__item promo__item-4men">
+                    <h1 class="promo__item-text">Shoes</h1>
+                </div>
+
+            </ul>
+        </div>
+        <div class="blankspace__promo-right"></div>
+    </div>
+
+    {{/if}}
 
 
 
@@ -136,13 +162,13 @@
                 {{#if esMens}}
 
                 <label>ingresa el rango de precio</label>
-                <input type="range" min="10" max="250">
+                <input class="input-rango"  value="{{price}}" type="range" min="10" max="250">
 
                 {{/if}}
                 {{#if esWomens}}
 
                 <label>ingresa el rango de precio</label>
-                <input type="range" min="10" max="250>
+                <input class="input-rango" value="{{price}}" type="range" min="10" max="250">
 
                 {{/if}}
 
@@ -175,8 +201,32 @@
 
 
 
+    <script>
+
+        var rango = document.querySelector('.input-rango');
+        function buscarPorPrecio() {
+
+            {{#if esWomens}}
+            location.href = '/tienda?category=womens&price=' + rango.value;
+            {{/if}}
+            {{#if esMens}}
+            location.href = '/tienda?category=mens&price=' + rango.value;
+            {{/if}}
+
+            console.log(rango.value);
+              }
+
+            rango.addEventListener('change', buscarPorPrecio);
+
+
+
+    </script>
+
+
 
 </body>
+
+
 
 
 </html>

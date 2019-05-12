@@ -1,3 +1,4 @@
+/*
 function expand() {
     $(".search").toggleClass("close");
     $(".input").toggleClass("square");
@@ -8,6 +9,7 @@ function expand() {
     }
   }
   $('button').on('click', expand);
+ 
 
 
   var rango = document.querySelector('.input-rango');
@@ -15,3 +17,4 @@ function expand() {
     console.log(rango.value);
   }
   rango.addEventListener('input', buscarPorPrecio);
+   */

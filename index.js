@@ -57,13 +57,17 @@ app.get('/', function (request, response) {
 
 app.get('/tienda/:category?', function (request, response) {
 
-   // console.log(request.params.type);
    var query = {};
 
    if(request.query.category){
        query.category = request.query.category;
    }
+   if(request.query.price){
+       query.price = { $lt: parseInt( request.query.price) };
+ 
+   }
 
+console.log(query);
     const productos = db.collection('productos');
     productos.find(query).toArray(function (err, docs) {
         assert.equal(null, err);
@@ -71,6 +75,7 @@ app.get('/tienda/:category?', function (request, response) {
          var contexto = {
              productos: docs,
              category: request.query.category,
+             price: request.query.price,
              esMens: request.query.category == "mens",
              esWomens: request.query.category == "womens"
          
