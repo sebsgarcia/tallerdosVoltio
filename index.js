@@ -39,8 +39,8 @@ app.use(express.static (__dirname +'/public'));
 app.engine('handlebars', hbs());
 //para setear el mortor de render a utilizar
 app.set('view engine', 'handlebars');
-
-var shirts = require('./productos');
+app.use(express.urlencoded({extended:true}));
+//var shirts = require('./productos');
 
 //app.use(express.static(path.join(__dirname, 'static')));
 //definir ruta root o principal
@@ -71,6 +71,10 @@ app.get('/tienda/:category?', function (request, response) {
        query.price = { $lt: parseInt( request.query.price) };
  
    }
+   if(request.query.type){
+    query.type = request.query.type;
+
+}
 
 console.log(query);
     const productos = db.collection('productos');
@@ -80,9 +84,10 @@ console.log(query);
          var contexto = {
              productos: docs,
              category: request.query.category,
+             type: request.query.type,
              price: request.query.price,
              esMens: request.query.category == "mens",
-             esWomens: request.query.category == "womens"
+             esWomens: request.query.category == "womens",
          
          };
          response.render('tienda', contexto);
@@ -103,6 +108,32 @@ app.get('/tienda/producto/:name', function(request, response){
         response.render('producto', contexto );
 
     });
+});
+
+app.post('/pago', function(request, response){
+
+    console.log(request.body);
+
+
+    var pedido = {
+        name: request.body.name,
+        document: request.body.document,
+        address: request.body.address,
+        email: request.body.email,
+
+        productos: JSON.parse(request.body.productos),
+        fecha: new Date(),
+        estado: 'nuevo'
+
+    };
+
+   var collection = db.collection('pedidos');
+   collection.insertOne(pedido, function(err){
+       assert.equal(err, null);
+       console.log('pedido guardado');
+
+   });
+
 });
 
 

@@ -90,8 +90,28 @@
         <h3>Cart</h3>
         <ul class="carrito-desplegado__lista"></ul>
     </div>
-    
+
+    <form action="/pago" method="POST">
+
+        <label for="">Complete Name</label>
+        <input name="name" type="text" value="Alejandro">
+
+        <label for="">Identification document</label>
+        <input name="document" type="text" >
+
+         <label for="">Delivery address</label>
+        <input name="address" type="text" >
+        
+         <label for="">E-mail</label>
+        <input name="email" type="email" >
+
+        <input class="input-productos" type="hidden" name="productos" value="">
+
+        <button>Ingresar</button>
+    </form>
+
         <script src="/scripts/script.js"></script>
+        <script src="/scripts/form.js"></script>
     
 </body>
 </html>
