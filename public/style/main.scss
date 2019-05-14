@@ -2176,6 +2176,14 @@ justify-content: space-between;
   padding-bottom: 5px;
 }
 
+.producto__desc{
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .product__cart{
   background-color:#F0F0F0;
 	display:inline-block;
@@ -2279,8 +2287,47 @@ justify-content: space-between;
   &-right{
     height: 100%;
     width: 50%;
-    background: rebeccapurple;
+  //  background: rebeccapurple;
+  display: flex;
+  
+   align-content: center;
+   padding-top: 30px;
+
+  
+
+  &--cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 600px;
+    height: 34em;
+    padding-top: 10px;
+
+
+
   }
+
+
+  }
+
+}
+
+.product-detail__cart{
+  background-color:rgb(34, 34, 34);
+	display:inline-block;
+  cursor:pointer;
+  border: none;
+	color:#fdfdfd;
+	font-family:Arial;
+	font-size:25px;
+	
+	padding:11px 33px;
+	text-decoration:none;
+
+}
+.product-detail__cart:hover{
+  background-color:rgb(63, 63, 63);
+
 
 }
 

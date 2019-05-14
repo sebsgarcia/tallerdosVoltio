@@ -116,11 +116,22 @@
 
         <div class="cont__prod-right">
 
-            <h1 class="producto__name">{{producto.name}}</h1>
-            <p class="producto__price">{{producto.price}}</p>
-            <p class="producto__desc">{{producto.desc}}</p>
+            <div class="cont__prod-right--cont">
 
-            <button class="product-detail__cart">Add to cart</button>
+                <h1 class="producto__name">{{producto.name}}</h1>
+                <div>
+                    <p class="producto__desc">Price:</p>
+                <p class="producto__price">${{producto.price}}</p>
+                </div>
+                <div>
+                    <p class="producto__desc">Product details:</p>
+
+                    <p class="producto__desc">{{producto.desc}}</p>
+                </div>
+
+                <button class="product-detail__cart">Add to cart</button>
+
+            </div>
         </div>
 
 
