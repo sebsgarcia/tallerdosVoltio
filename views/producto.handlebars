@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,9 +17,10 @@
 
 
 </head>
+
 <body>
 
-    
+
     <div class="nav">
         <div class="nav__blank--left">
             <div class="nav__blank--left-space">
@@ -61,10 +63,10 @@
                 </div>
                 <div class="nav__secu--item">
                     <span class="carrito__num"> </span>
-                   <a href="/cart">
-                    <i class="fas fa-shopping-bag"></i> </i>
+                    <a href="/cart">
+                        <i class="fas fa-shopping-bag"></i> </i>
                     </a>
-                   
+
 
                 </div>
 
@@ -80,23 +82,60 @@
 
     </div>
 
-
     <div class="space"></div>
 
-     <img class="producto__image" src="{{producto.imagenes.[0]}}" width="250px" alt="">
-    <h1 class="producto__name">{{producto.name}}</h1>
-    <p class="producto__price">{{producto.price}}</p>
+    <div class="contenedor-prod-background">
+        <div class="contenedor-prod-background--left"></div>
+        <div class="contenedor-prod-background--right"></div>
+    </div>
 
-    <button class="product-detail__cart">Add to cart</button>
+    <div class="cont__prod">
 
-    
+        <div class="cont__prod-left">
+
+            <div class="cont__prod-left-imagenes">
+
+                <div>
+                    <img class="producto__image1" src="{{producto.imagenes.[1]}}" width="120px" alt="">
+                </div>
+                <div>
+                    <img class="producto__image2" src="{{producto.imagenes.[2]}}" width="120px" alt="">
+                </div>
+                <div>
+                    <img class="producto__image3" src="{{producto.imagenes.[3]}}" width="120px" alt="">
+                </div>
+
+            </div>
+            <div class="cont__prod-left-imagen">
+
+                <img class="producto__image" src="{{producto.imagenes.[0]}}" width="    366px" alt="">
+            </div>
+
+
+        </div>
+
+        <div class="cont__prod-right">
+
+            <h1 class="producto__name">{{producto.name}}</h1>
+            <p class="producto__price">{{producto.price}}</p>
+            <p class="producto__desc">{{producto.desc}}</p>
+
+            <button class="product-detail__cart">Add to cart</button>
+        </div>
+
+
+    </div>
 
 
 
-    
+
+
+
+
 
     <script src="/scripts/script.js"></script>
 
-    
+
 </body>
+
 </html>

@@ -37,9 +37,11 @@
         <div class="nav__blank--list">
 
             <ul class="flex-container">
-                <li class="flex-item flex-item-woman" id="cambiarwoman"><a href="/tienda?category=womens">Woman</a>
+                <li class="flex-item flex-item-woman" {{#if esWomens}}style="text-decoration:line-through"
+                    {{/if}}id="cambiarwoman"><a href="/tienda?category=womens">Woman</a>
                 </li>
-                <li class="flex-item" id="cambiarman"><a href="/tienda?category=mens">Man</a> </li>
+                <li class="flex-item" {{#if esMens}}style="text-decoration:line-through" {{/if}} id="cambiarman"><a
+                        href="/tienda?category=mens">Man</a> </li>
                 <li class="flex-item flex-item-kids" id="cambiarkids"><a href="#">Kids</a> </li>
                 <li class="flex-item flex-item-gifts" id="cambiarsale"><a href="#">Sale</a> </li>
 
@@ -60,9 +62,9 @@
                 </div>
                 <div class="nav__secu--item">
                     <span class="carrito__num"> </span>
-                   
-                     <a href="/cart">
-                    <i class="fas fa-shopping-bag"></i> </i>
+
+                    <a href="/cart">
+                        <i class="fas fa-shopping-bag"></i> </i>
                     </a>
 
                 </div>
@@ -91,26 +93,26 @@
             <ul class="blankspace__promo-list">
                 <a href="/tienda?category=womens&type=tops">
 
-                <div class="promo__item promo__item-1wom">
-                    <h1 class="promo__item-text">Tops</h1>
-                </div>
+                    <div class="promo__item promo__item-1wom">
+                        <h1 class="promo__item-text">Tops</h1>
+                    </div>
 
                 </a>
 
                 <a href="/tienda?category=womens&type=bottoms">
-                <div class="promo__item promo__item-2wom">
-                    <h1 class="promo__item-text">Bottoms</h1>
-                </div>
+                    <div class="promo__item promo__item-2wom">
+                        <h1 class="promo__item-text">Bottoms</h1>
+                    </div>
                 </a>
                 <a href="/tienda?category=womens&type=dresses">
-                <div class="promo__item promo__item-3wom">
-                    <h1 class="promo__item-text">Dresses</h1>
-                </div>
+                    <div class="promo__item promo__item-3wom">
+                        <h1 class="promo__item-text">Dresses</h1>
+                    </div>
                 </a>
                 <a href="/tienda?category=womens&type=jackets">
-                <div class="promo__item promo__item-4wom">
-                    <h1 class="promo__item-text">Jackets</h1>
-                </div>
+                    <div class="promo__item promo__item-4wom">
+                        <h1 class="promo__item-text">Jackets</h1>
+                    </div>
                 </a>
 
             </ul>
@@ -127,24 +129,24 @@
 
             <ul class="blankspace__promo-list">
                 <a href="/tienda?category=mens&type=tees">
-                <div class="promo__item promo__item-1men">
-                    <h1 class="promo__item-text">Tees</h1>
-                </div>
+                    <div class="promo__item promo__item-1men">
+                        <h1 class="promo__item-text">Tees</h1>
+                    </div>
                 </a>
                 <a href="/tienda?category=mens&type=bottoms">
-                <div class="promo__item promo__item-2men">
-                    <h1 class="promo__item-text">Bottoms</h1>
-                </div>
+                    <div class="promo__item promo__item-2men">
+                        <h1 class="promo__item-text">Bottoms</h1>
+                    </div>
                 </a>
                 <a href="/tienda?category=mens&type=jackets">
-                <div class="promo__item promo__item-3men">
-                    <h1 class="promo__item-text">Jackets</h1>
-                </div>
+                    <div class="promo__item promo__item-3men">
+                        <h1 class="promo__item-text">Jackets</h1>
+                    </div>
                 </a>
                 <a href="/tienda?category=mens&type=shoes">
-                <div class="promo__item promo__item-4men">
-                    <h1 class="promo__item-text">Shoes</h1>
-                </div>
+                    <div class="promo__item promo__item-4men">
+                        <h1 class="promo__item-text">Shoes</h1>
+                    </div>
                 </a>
 
             </ul>
@@ -165,21 +167,21 @@
                 <div class="content__left-filterbar--blank2-list">
                     <p class="filterbar_title">Womens</p>
                     <ul class="left__filterbarnav">
-                        <li><a href="">Tops</a></li>
-                        <li><a href="">Bottoms</a></li>
-                        <li><a href="">Dresses</a></li>
-                        <li><a href="">Jackets</a></li>
-                       
+                        <li><a href="/tienda?category=womens&type=tops">Tops</a></li>
+                        <li><a href="/tienda?category=womens&type=bottoms">Bottoms</a></li>
+                        <li><a href="/tienda?category=womens&type=dresses">Dresses</a></li>
+                        <li><a href="/tienda?category=womens&type=jackets">Jackets</a></li>
+
                     </ul>
                     <p class="filterbar_title">Mens</p>
-                   <ul class="left__filterbarnav">
-                     <li><a href="">Tees</a></li>
-                        <li><a href="">Bottoms</a></li>
-                        <li><a href="">Jackets</a></li>
-                        <li><a href="">Shoes</a></li>
-                   </ul>
+                    <ul class="left__filterbarnav">
+                        <li><a href="/tienda?category=mens&type=tees">Tees</a></li>
+                        <li><a href="/tienda?category=mens&type=bottoms">Bottoms</a></li>
+                        <li><a href="/tienda?category=mens&type=jackets">Jackets</a></li>
+                        <li><a href="/tienda?category=mens&type=shoes">Shoes</a></li>
+                    </ul>
                 </div>
-               
+
             </div>
 
         </div>
@@ -190,17 +192,35 @@
 
                 {{#if esMens}}
 
-                <label>ingresa el rango de precio</label>
-                <input class="input-rango" value="{{price}}" type="range" min="10" max="250">
+                <div class="filter-cont-price">
+
+                    <h1 class="subtitle">Mens {{type}}</h1>
+
+                    <div class="label-cont">
+                        <label class="label">Enter your desired price range</label>
+                        <input class="input-rango" value="{{price}}" type="range" min="10" max="250">
+                    </div>
+
+
+                </div>
 
                 {{/if}}
                 {{#if esWomens}}
 
-                <label>Enter your desired price range</label>
-                <input class="input-rango" value="{{price}}" type="range" min="10" max="250">
+                <div class="filter-cont-price">
+                    <h1 class="subtitle">Womens {{type}}</h1>
+
+                    <div class="label-cont">
+                        <label class="label">Enter your desired price range</label>
+                       
+                            
+                            <input class="input-rango" value="{{price}}" type="range" min="10" max="250">
+          
+                    </div>
+
+                </div>
 
                 {{/if}}
-
 
             </div>
 
@@ -213,9 +233,9 @@
                         <a href="/tienda/producto/{{name}}">
                             <img class="producto__image" src="{{imagenes.[1]}}" width="250px">
                             <h2 class="producto__name">{{name}}</h2>
-                            <p class="producto__price">{{price}}</p>
-                            <p>{{type}}</p>
-                        </a> 
+                            <p class="producto__price">${{price}}</p>
+
+                        </a>
                         <button class="product__cart">Add to cart</button>
                     </div>
 
@@ -240,17 +260,17 @@
             {{#if esWomens}}
             location.href = '/tienda?category=womens&price=' + rango.value;
             {{/if}}
-              {{#if esMens}}
-              location.href = '/tienda?category=mens&price=' + rango.value;
-             {{/if}}
+            {{#if esMens}}
+             location.href = '/tienda?category=mens&price=' + rango.value;
+            {{/if}}
+             console.log(rango.value);
+            
+            } 
+             if (rango != null) {
 
-                            console.log(rango.value);
-                        }
-
-             if(rango !=null){
-
-             rango.addEventListener('change', buscarPorPrecio);
-             } 
+                  rango.addEventListener('change', buscarPorPrecio);
+                
+                }
 
 
 

@@ -86,6 +86,7 @@ console.log(query);
              category: request.query.category,
              type: request.query.type,
              price: request.query.price,
+             desc: request.query.desc,
              esMens: request.query.category == "mens",
              esWomens: request.query.category == "womens",
          
