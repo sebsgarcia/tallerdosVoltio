@@ -40,7 +40,7 @@ app.engine('handlebars', hbs());
 //para setear el mortor de render a utilizar
 app.set('view engine', 'handlebars');
 app.use(express.urlencoded({extended:true}));
-//var shirts = require('./productos');
+var shirts = require('./productos');
 
 //app.use(express.static(path.join(__dirname, 'static')));
 //definir ruta root o principal

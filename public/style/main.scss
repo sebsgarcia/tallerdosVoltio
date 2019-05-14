@@ -1954,13 +1954,15 @@ display: flex;
 justify-content: center;
 
 
+
 &-text{
   display: flex;
   font-size: 50px;
   color:white; 
   font-family: 'Playfair Display', serif;
   font-weight: 900i;
-  align-self: center;    
+  align-self: center; 
+  text-decoration: none;   
 
 }
 
@@ -2028,7 +2030,17 @@ justify-content: center;
     }
     &--blank2{
       width: 75%;
-      background: white;
+      background: red;
+
+      &-list{
+        background: yellow;
+        display: flex;
+        flex-direction: column;
+        height: 30em;
+        //padding-top: 30px;
+        justify-content: space-around;
+        
+      }
     }
   }
 
@@ -2038,6 +2050,26 @@ justify-content: center;
   }
 
 
+}
+.left__filterbarnav{
+  list-style: none;
+}
+.filterbar_title{
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+.left__filterbarnav li{
+  background: red;
+  padding: 10px;
+  padding-left: 20px;
+ }
+
+
+.left__filterbarnav li a{
+ text-decoration: none;
+ font-family: 'Lato', sans-serif;
+ font-weight: 500;
 }
 
 
@@ -2092,6 +2124,14 @@ justify-content: center;
     
   }
 }
+
+.producto__name{
+  text-decoration: none;
+  background: red;
+  list-style: none;
+}
+
+
 
 
 
