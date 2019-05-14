@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Producto</title>
+    <title>Carrito</title>
 
 
     <link rel="stylesheet" href="/style/main.css">
 
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Playfair+Display:900i" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Playfair+Display:900i" rel="stylesheet">   
 
 </head>
 <body>
 
-    
+ 
     <div class="nav">
         <div class="nav__blank--left">
             <div class="nav__blank--left-space">
@@ -83,20 +83,15 @@
 
     <div class="space"></div>
 
-     <img class="producto__image" src="{{producto.imagenes.[0]}}" width="250px" alt="">
-    <h1 class="producto__name">{{producto.name}}</h1>
-    <p class="producto__price">{{producto.price}}</p>
 
-    <button class="product-detail__cart">Add to cart</button>
 
+    <h1>El puto carro</h1>
+    <div class="carrito-desplegado">
+        <h3>Cart</h3>
+        <ul class="carrito-desplegado__lista"></ul>
+    </div>
     
-
-
-
-    
-
-    <script src="/scripts/script.js"></script>
-
+        <script src="/scripts/script.js"></script>
     
 </body>
 </html>

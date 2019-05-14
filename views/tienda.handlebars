@@ -8,7 +8,7 @@
     <title>Voltio Tienda</title>
 
 
-    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="/style/main.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -59,7 +59,11 @@
 
                 </div>
                 <div class="nav__secu--item">
-                    <i class="fas fa-shopping-bag"></i>
+                    <span class="carrito__num"> </span>
+                   
+                     <a href="/cart">
+                    <i class="fas fa-shopping-bag"></i> </i>
+                    </a>
 
                 </div>
 
@@ -166,9 +170,9 @@
                     {{#each productos}}
 
                     <div class="womens__products-list--item">
-                        <a href="/tienda/producto/{{_id}}">
-                            <img src="{{imagenes.[1]}}" width="250px">
-                            <h2 class="producto__nombre">{{name}}</h2>
+                        <a href="/tienda/producto/{{name}}">
+                            <img class="producto__image" src="{{imagenes.[1]}}" width="250px">
+                            <h2 class="producto__name">{{name}}</h2>
                             <p class="producto__price">{{price}}</p>
                             <p>{{type}}</p>
                         </a> 

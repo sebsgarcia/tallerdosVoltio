@@ -55,6 +55,11 @@ app.get('/', function (request, response) {
     response.render('home', contexto);
 });
 
+app.get('/cart', function (request, response) {
+
+    response.render('carrito');
+});
+
 app.get('/tienda/:category?', function (request, response) {
 
    var query = {};
@@ -84,6 +89,23 @@ console.log(query);
     }); 
 
 });
+
+app.get('/tienda/producto/:name', function(request, response){
+
+    var collection = db.collection('productos');
+    collection.find({name : request.params.name })
+    .toArray(function(err, docs){
+        console.log(docs);
+        var contexto = {
+            producto: docs[0]
+        };
+
+        response.render('producto', contexto );
+
+    });
+});
+
+
 
 app.listen(4000, function () {
     console.log('Cargo');
