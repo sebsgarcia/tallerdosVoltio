@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +10,17 @@
 
     <link rel="stylesheet" href="/style/main.css">
 
-    
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Playfair+Display:900i" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Playfair+Display:900i" rel="stylesheet">
 
 </head>
+
 <body>
 
- 
+
     <div class="nav">
         <div class="nav__blank--left">
             <div class="nav__blank--left-space">
@@ -61,10 +63,10 @@
                 </div>
                 <div class="nav__secu--item">
                     <span class="carrito__num"> </span>
-                   <a href="/cart">
-                    <i class="fas fa-shopping-bag"></i> </i>
+                    <a href="/cart">
+                        <i class="fas fa-shopping-bag"></i> </i>
                     </a>
-                   
+
 
                 </div>
 
@@ -82,34 +84,43 @@
 
     <div class="space"></div>
 
-<div>
-     <h1>Shopping bag</h1>
-    <div class="carrito-desplegado">
-        <ul class="carrito-desplegado__lista"></ul>
-</div>
- 
+    <div>
+        <h1 class="carrito__title">Shopping bag</h1>
+        <div class="carrito-desplegado">
+            <ul class="carrito-desplegado__lista"></ul>
+        </div>
 
-    <form action="/pago" method="POST">
+       
 
-        <label for="">Complete Name</label>
-        <input name="name" type="text" value="" placeholder="Your Name"
+        <div class="cont_pago">
 
-        <label for="">Credit Card</label>
-        <input name="document" type="text" placeholder="XXX XXX XXX XXX" >
+            <div>
+                 <div>
+            <h1 class="ship__title">Shipping info</h1>
+        </div>
+                <form class="form" action="/pago" method="POST">
 
-         <label for="">Delivery address</label>
-        <input name="address" type="text" placeholder="Adress">
-        
-         <label for="">E-mail</label>
-        <input name="email" type="email" placeholder="Email">
+                    <label class="labels" for="">Complete Name</label>
+                    <input name="name" type="text" value="" placeholder="Your Name">
 
-        <input class="input-productos" type="hidden" name="productos" value="">
+                     <label class="labels" for="">Credit Card</label>
+                    <input name="document" type="text" placeholder="XXX XXX XXX XXX">
 
-        <button class="btn__cart">Place Order</button>
-    </form>
+                    <label class="labels" for="">Delivery address</label>
+                    <input name="address" type="text" placeholder="Address">
 
+                    <label class="labels" for="">E-mail</label>
+                    <input name="email" type="email" placeholder="Email">
+
+                    <input class="input-productos" type="hidden" name="productos" value="">
+
+                    <button class="btn__cart">Place Order</button>
+                </form>
+            </div>
+        </div>
         <script src="/scripts/script.js"></script>
         <script src="/scripts/form.js"></script>
-    
+
 </body>
+
 </html>

@@ -2190,7 +2190,7 @@ justify-content: space-between;
   cursor:pointer;
   border: none;
 	color:#3b3b3b;
-	font-family:Arial;
+  font-family: 'Lato', sans-serif;
 	font-size:15px;
 	font-weight:bold;
 	padding:11px 33px;
@@ -2327,10 +2327,17 @@ justify-content: space-between;
 
 .carrito-desplegado__lista{
   display: flex;
-  background: gray;
+  background: #F8F4F3;
   width: 100%;
   padding: 10px;
+  justify-content: center;
 
+
+}
+.carrito__desplegado-item{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
 }
 
 input[type=text] {
@@ -2357,8 +2364,59 @@ input[type=email] {
   width: 100%;
   border-radius: none;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 20px;
 }
+.btn__cart:hover{
+  background-color: rgb(80, 80, 80);
+  
+}
+
+.carrito__title{
+  font-family: 'Lato', sans-serif;
+padding: 20px;
+padding-top: 30px;
+padding-left: 450px;
+}
+
+.ship__title{
+  font-family: 'Lato', sans-serif;
+  padding-top: 30px;
+}
+
+.labels{
+  font-family: 'Lato', sans-serif;
+  padding-bottom: 5px;
+}
+
+.cont_pago{
+  width:100%;
+  height: auto;
+ display: flex;
+ justify-content: center;
+
+
+}
+
+.form{
+width: 600px;
+padding-top: 30px;
+}
+
+.size{
+  display: flex;
+  flex-direction: column;
+}
+.size_list{
+  display: flex;
+  
+  
+}
+
+.size_list p{
+  padding: 10px;
+}
+
+
 
 
 

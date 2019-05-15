@@ -38,7 +38,7 @@ function actualizarCarrito(){
 
   listaCarrito.innerHTML = '';
     listaProductos.forEach(function(producto, index){
-      listaCarrito.innerHTML += `<div>
+      listaCarrito.innerHTML += `<div class="carrito__desplegado-item">
       <img class="producto__image" src="${producto.image}" width="150px">
       <p class="producto__name">${producto.name}</p>
       <p class="producto__price">${producto.price}</p>
