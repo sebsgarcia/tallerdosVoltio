@@ -82,30 +82,30 @@
 
     <div class="space"></div>
 
-
-    <h1>El puto carro</h1>
+<div>
+     <h1>Shopping bag</h1>
     <div class="carrito-desplegado">
-        <h3>Cart</h3>
         <ul class="carrito-desplegado__lista"></ul>
-    </div>
+</div>
+ 
 
     <form action="/pago" method="POST">
 
         <label for="">Complete Name</label>
-        <input name="name" type="text" value="">
+        <input name="name" type="text" value="" placeholder="Your Name"
 
-        <label for="">Identification document</label>
-        <input name="document" type="text" >
+        <label for="">Credit Card</label>
+        <input name="document" type="text" placeholder="XXX XXX XXX XXX" >
 
          <label for="">Delivery address</label>
-        <input name="address" type="text" >
+        <input name="address" type="text" placeholder="Adress">
         
          <label for="">E-mail</label>
-        <input name="email" type="email" >
+        <input name="email" type="email" placeholder="Email">
 
         <input class="input-productos" type="hidden" name="productos" value="">
 
-        <button>Ingresar</button>
+        <button class="btn__cart">Place Order</button>
     </form>
 
         <script src="/scripts/script.js"></script>

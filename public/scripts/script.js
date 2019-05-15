@@ -38,8 +38,11 @@ function actualizarCarrito(){
 
   listaCarrito.innerHTML = '';
     listaProductos.forEach(function(producto, index){
-      listaCarrito.innerHTML += `
-      <img class="producto__image" src="${producto.image}" width="250px">
+      listaCarrito.innerHTML += `<div>
+      <img class="producto__image" src="${producto.image}" width="150px">
+      <p class="producto__name">${producto.name}</p>
+      <p class="producto__price">${producto.price}</p>
+      </div>
       `;
       
     }); 
