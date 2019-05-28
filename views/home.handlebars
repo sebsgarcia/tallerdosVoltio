@@ -22,6 +22,8 @@
     <script src="/scripts/three.min.js"></script>
 	<script src="/scripts/TweenMax.min.js"></script>
 	<script src="/scripts/hover-effect.umd.js"></script>
+    <script src="/scripts/three.r92.min.js"></script>
+<script src="/scripts/vanta.birds.min.js"></script>
 
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Playfair+Display:900i" rel="stylesheet">
@@ -132,7 +134,7 @@
         </div>
     </footer>
 
-    <div class="fondo animate-nav" id="fondo">
+    <div class="fondo animate-nav animate-fondo" id="fondo">
         <div class="fondo__blank1">
 
             <div class="fondo__blank1-iztop"></div>
@@ -155,6 +157,10 @@
 
 
     <div id="fullpage">
+          <section class="cont active animate-nav">
+            <div id="birds" class="birds"></div>
+        </section>
+
 
         <section class="cont active animate-nav">
             <div class="cont__blank"></div>
@@ -385,6 +391,16 @@
         image2: 'imagenes/ice2.jpg',
         displacementImage: 'imagenes/distortion/ramen-re.jpg'
     });
+</script>
+<script>
+VANTA.BIRDS({
+  el: "#birds",
+  backgroundColor: 0xffffff,
+  color1: 0xffbfbf,
+  color2: 0xf78d56,
+  colorMode: "lerpGradient",
+  backgroundAlpha: 0.00
+})
 </script>
 
 

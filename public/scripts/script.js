@@ -91,11 +91,20 @@ actualizarCarrito();
 
 
     //Taller 3
+    TweenMax.set(".animate-nav",{autoAlpha:0});
+    TweenMax.to(".animate-nav", 1, {
+   //  x: 500,
+   //  scale: .8,
+    //  ease: Elastic.easeOut,
+      autoAlpha:1,
+      delay:1
+    });
 
+    /*
 TweenMax.from(".animate-nav",1, {opacity:0, delay:1});
 
 
-
+*/
 
 
 

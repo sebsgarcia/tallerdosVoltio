@@ -88,53 +88,73 @@
 
                 var fondo = document.getElementById("cambiarfondo");
                 if(targetIndex===0){
-					fondo.style.background=("#F4F1EC");
+					fondo.style.background=("#FFFFFF");
+					
 				}
 				if(targetIndex===1){
-					fondo.style.background=("#ECF0D9");
+					fondo.style.background=("#F4F1EC");
+					
 				}
 				if(targetIndex===2){
-					fondo.style.background=("#FCF0DC");
+					fondo.style.background=("#ECF0D9");
 				}
 				if(targetIndex===3){
-					fondo.style.background=("#F1E8F8");
+					fondo.style.background=("#FCF0DC");
 				}
 				if(targetIndex===4){
+					fondo.style.background=("#F1E8F8");
+				}
+				if(targetIndex===5){
 					fondo.style.background=("#FFE5E5");
 				}
 
 
 				var fondo2 = document.getElementById("cambiarfondo2");
                 if(targetIndex===0){
-					fondo2.style.background=("#F4F1EC");
+					fondo2.style.background=("#FFFFFF");
+					
 				}
 				if(targetIndex===1){
-					fondo2.style.background=("#ECF0D9");
+					fondo2.style.background=("#F4F1EC");
+					TweenMax.from(".animate-fondo",1, {opacity:0, delay:1});
+					
 				}
 				if(targetIndex===2){
-					fondo2.style.background=("#FCF0DC");
+					fondo2.style.background=("#ECF0D9");
+					TweenMax.from(".animate-fondo",1, {opacity:0, delay:1});
 				}
 				if(targetIndex===3){
-					fondo2.style.background=("#F1E8F8");
+					fondo2.style.background=("#FCF0DC");
+					TweenMax.from(".animate-fondo",1, {opacity:0, delay:1});
 				}
 				if(targetIndex===4){
+					fondo2.style.background=("#F1E8F8");
+					TweenMax.from(".animate-fondo",1, {opacity:0, delay:1});
+				}
+				if(targetIndex===5){
 					fondo2.style.background=("#FFE5E5");
+					TweenMax.from(".animate-fondo",1, {opacity:0, delay:1});
 				}
 
 				var fondo3 = document.getElementById("cambiarfondo3");
                 if(targetIndex===0){
-					fondo3.style.background=("#F4F1EC");
+					fondo3.style.background=("#FFFFFF");
+					
 				}
 				if(targetIndex===1){
-					fondo3.style.background=("#ECF0D9");
+					fondo3.style.background=("#F4F1EC");
+					
 				}
 				if(targetIndex===2){
-					fondo3.style.background=("#FCF0DC");
+					fondo3.style.background=("#ECF0D9");
 				}
 				if(targetIndex===3){
-					fondo3.style.background=("#F1E8F8");
+					fondo3.style.background=("#FCF0DC");
 				}
 				if(targetIndex===4){
+					fondo3.style.background=("#F1E8F8");
+				}
+				if(targetIndex===5){
 					fondo3.style.background=("#FFE5E5");
 				}
 

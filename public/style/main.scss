@@ -9,6 +9,9 @@ $color1: #F4F1EC;
 $min-width: 120px;
 $maincolor: #6BBE92;  
 $secondarycolor: #3E8760;
+.animate-nav{
+  opacity: 0;
+}
 
 .nav{
     display: flex;
@@ -21,6 +24,7 @@ $secondarycolor: #3E8760;
     align-items: baseline;
   background: white;
     padding-top: 3em;
+  
 
 
   &__blank--left{
@@ -327,7 +331,7 @@ $secondarycolor: #3E8760;
         &-izbot{
             width: 100%;
             height: 50%;
-            background: #F4F1EC;
+            background: #FFFFFF;
             
         }
       
@@ -355,7 +359,7 @@ $secondarycolor: #3E8760;
 
             width: 100%;
             height: 90%;
-            background: #F4F1EC;
+            background: #FFFFFF;
 
         }
         &-izbot{
@@ -374,7 +378,7 @@ $secondarycolor: #3E8760;
             &--2{
                 width: 50%;
                 height: 100%;
-                background: #F4F1EC;
+                background: #FFFFFF;
                 
             }
             
@@ -2289,6 +2293,12 @@ padding-top: 30px;
 
 .size_list p{
   padding: 10px;
+}
+
+.birds{
+  height: 100vh;
+  width: 100%;
+ // background: red;
 }
 
 
