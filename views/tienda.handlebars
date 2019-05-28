@@ -9,6 +9,7 @@
 
 
     <link rel="stylesheet" href="./style/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -38,11 +39,11 @@
 
             <ul class="flex-container">
                 <li class="flex-item flex-item-woman" {{#if esWomens}}style="text-decoration:line-through"
-                    {{/if}}id="cambiarwoman"><a href="/tienda?category=womens">Woman</a>
+                    {{/if}}id="cambiarwoman"><a href="/tienda?category=womens">Women's</a>
                 </li>
                 <li class="flex-item" {{#if esMens}}style="text-decoration:line-through" {{/if}} id="cambiarman"><a
-                        href="/tienda?category=mens">Man</a> </li>
-                <li class="flex-item flex-item-kids" id="cambiarkids"><a href="#">Kids</a> </li>
+                        href="/tienda?category=mens">Men's</a> </li>
+                <li class="flex-item flex-item-kids" id="cambiarkids"><a href="#">Kid's</a> </li>
                 <li class="flex-item flex-item-gifts" id="cambiarsale"><a href="#">Sale</a> </li>
 
             </ul>
@@ -93,24 +94,24 @@
             <ul class="blankspace__promo-list">
                 <a href="/tienda?category=womens&type=tops">
 
-                    <div class="promo__item promo__item-1wom">
+                    <div  data-aos="fade-up" class="promo__item promo__item-1wom">
                         <h1 class="promo__item-text">Tops</h1>
                     </div>
 
                 </a>
 
                 <a href="/tienda?category=womens&type=bottoms">
-                    <div class="promo__item promo__item-2wom">
+                    <div  data-aos="fade-up" class="promo__item promo__item-2wom">
                         <h1 class="promo__item-text">Bottoms</h1>
                     </div>
                 </a>
                 <a href="/tienda?category=womens&type=dresses">
-                    <div class="promo__item promo__item-3wom">
+                    <div  data-aos="fade-up"  class="promo__item promo__item-3wom">
                         <h1 class="promo__item-text">Dresses</h1>
                     </div>
                 </a>
                 <a href="/tienda?category=womens&type=jackets">
-                    <div class="promo__item promo__item-4wom">
+                    <div  data-aos="fade-up" class="promo__item promo__item-4wom">
                         <h1 class="promo__item-text">Jackets</h1>
                     </div>
                 </a>
@@ -127,7 +128,7 @@
         <div class="blankspace__promo-left"></div>
         <div class="blankspace__promo-middle">
 
-            <ul class="blankspace__promo-list">
+            <ul data-aos="fade-up" class="blankspace__promo-list">
                 <a href="/tienda?category=mens&type=tees">
                     <div class="promo__item promo__item-1men">
                         <h1 class="promo__item-text">Tees</h1>
@@ -165,20 +166,20 @@
 
 
                 <div class="content__left-filterbar--blank2-list">
-                    <p class="filterbar_title">Womens</p>
+                    <p data-aos="fade-right" class="filterbar_title">Women's</p>
                     <ul class="left__filterbarnav">
-                        <li><a href="/tienda?category=womens&type=tops">Tops</a></li>
-                        <li><a href="/tienda?category=womens&type=bottoms">Bottoms</a></li>
-                        <li><a href="/tienda?category=womens&type=dresses">Dresses</a></li>
-                        <li><a href="/tienda?category=womens&type=jackets">Jackets</a></li>
+                        <li data-aos="fade-right"><a href="/tienda?category=womens&type=tops">Tops</a></li>
+                        <li data-aos="fade-right"><a href="/tienda?category=womens&type=bottoms">Bottoms</a></li>
+                        <li data-aos="fade-right"><a href="/tienda?category=womens&type=dresses">Dresses</a></li>
+                        <li data-aos="fade-right"><a href="/tienda?category=womens&type=jackets">Jackets</a></li>
 
                     </ul>
-                    <p class="filterbar_title">Mens</p>
+                    <p data-aos="fade-right" class="filterbar_title">Men's</p>
                     <ul class="left__filterbarnav">
-                        <li><a href="/tienda?category=mens&type=tees">Tees</a></li>
-                        <li><a href="/tienda?category=mens&type=bottoms">Bottoms</a></li>
-                        <li><a href="/tienda?category=mens&type=jackets">Jackets</a></li>
-                        <li><a href="/tienda?category=mens&type=shoes">Shoes</a></li>
+                        <li data-aos="fade-right"><a href="/tienda?category=mens&type=tees">Tees</a></li>
+                        <li data-aos="fade-right"><a href="/tienda?category=mens&type=bottoms">Bottoms</a></li>
+                        <li data-aos="fade-right"><a href="/tienda?category=mens&type=jackets">Jackets</a></li>
+                        <li data-aos="fade-right"><a href="/tienda?category=mens&type=shoes">Shoes</a></li>
                     </ul>
                 </div>
 
@@ -194,7 +195,7 @@
 
                 <div class="filter-cont-price">
 
-                    <h1 class="subtitle">Mens {{type}}</h1>
+                    <h1 data-aos="fade-right" class="subtitle">Men's {{type}}</h1>
 
                     <div class="label-cont">
                         <label class="label">Enter your desired price range</label>
@@ -208,7 +209,7 @@
                 {{#if esWomens}}
 
                 <div class="filter-cont-price">
-                    <h1 class="subtitle">Womens {{type}}</h1>
+                    <h1 data-aos="fade-right" class="subtitle">Women's {{type}}</h1>
 
                     <div class="label-cont">
                         <label class="label">Enter your desired price range</label>
@@ -229,7 +230,7 @@
                 <ul class="womens__products-list">
                     {{#each productos}}
 
-                    <div class="womens__products-list--item">
+                    <div  data-aos="fade-up" data-aos-duration="600" data-aos-delay="3" class="womens__products-list--item">
                         <a href="/tienda/producto/{{name}}">
                             <img class="producto__image" src="{{imagenes.[1]}}" width="250px">
                             <h2 class="producto__name">{{name}}</h2>
@@ -277,6 +278,8 @@
     </script>
 
     <script src="/scripts/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
 
 

@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Voltio</title>
-    <link rel='stylesheet'  href='./style/main.css' />
+    <link rel='stylesheet' href='./style/main.css' />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 
 
@@ -15,6 +18,10 @@
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="style/jquery.fullpage.js"></script>
+
+    <script src="/scripts/three.min.js"></script>
+	<script src="/scripts/TweenMax.min.js"></script>
+	<script src="/scripts/hover-effect.umd.js"></script>
 
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Playfair+Display:900i" rel="stylesheet">
@@ -29,7 +36,7 @@
         <div class="nav__blank--left">
             <div class="nav__blank--left-space">
                 <div class="nav__blank--left-title">
-                    <h1>VOLTIO</h1>
+                    <h1 class="animate-nav">VOLTIO</h1>
                 </div>
 
             </div>
@@ -43,97 +50,52 @@
 
         <div class="nav__blank--list">
 
-            <ul class="flex-container">
-                <li class="flex-item flex-item-woman" id="cambiarwoman"><a href="/tienda?category=womens">Woman</a> </li>
-                <li class="flex-item" id="cambiarman"><a href="/tienda?category=mens">Man</a> </li>
-                <li class="flex-item flex-item-kids" id="cambiarkids"><a href="#">Kids</a> </li>
+            <ul class="flex-container animate-nav">
+                <li class="flex-item flex-item-woman" id="cambiarwoman"><a href="/tienda?category=womens">Women's</a>
+                </li>
+                <li class="flex-item" id="cambiarman"><a href="/tienda?category=mens">Men's</a> </li>
+                <li class="flex-item flex-item-kids" id="cambiarkids"><a href="#">Kid's</a> </li>
                 <li class="flex-item flex-item-gifts" id="cambiarsale"><a href="#">Sale</a> </li>
 
             </ul>
         </div>
 
-        <div class="nav__blank--icons">
+        <div class="nav__blank--icons animate-nav">
 
-                <div class="nav__secu">
-                        <div class="nav__secu--search">
+            <div class="nav__secu">
+                <div class="nav__secu--search">
 
-            
-                           <i class="fas fa-search"></i> 
-            
-                        </div>
-                        <div class="nav__secu--user">
-                            <i class="fas fa-user"></i>
-            
-                        </div>
-                         <div class="nav__secu--item">
-                    <span class="carrito__num"> </span>
-                   <a href="/cart">
-                    <i class="fas fa-shopping-bag"></i> </i>
-                    </a>
-                   
+
+                    <i class="fas fa-search"></i>
 
                 </div>
-             
-                    </div>
+                <div class="nav__secu--user">
+                    <i class="fas fa-user"></i>
+
+                </div>
+                <div class="nav__secu--item">
+                    <span class="carrito__num"> </span>
+                    <a href="/cart">
+                        <i class="fas fa-shopping-bag"></i> </i>
+                    </a>
+
+
+                </div>
+
+            </div>
         </div>
-
-
-        <!--
-        <div class="nav__prin">
-            <div class="nav__prin--head">
-                <h1 class="nav__prin--logo"> VOLTIO </h1>
-            </div>
-            <div class="nav__blank">
-            </div>
-      </div>
- -->
-        <!--
-        <ul class="flex-container">
-            <li class="flex-item flex-item-woman" id="cambiarwoman"><a href="#">Woman</a> </li>
-            <li class="flex-item flex-item-man" id="cambiarman"><a href="#">Man</a> </li>
-            <li class="flex-item flex-item-kids" id="cambiarkids"><a href="#">Kids</a> </li>
-            <li class="flex-item flex-item-gifts" id="cambiarsale"><a href="#">Sale</a> </li>
-
-        </ul>
-
-          -->
-
-
-        <!--
-        <div class="nav__secu">
-            <div class="nav__secu--search">
-
-                <form id="content">
-                    <input type="text" name="input" class="input">
-                    <button type="reset" class="search"></button>
-                </form>
-
-               <i class="fas fa-search"></i> 
-
-            </div>
-            <div class="nav__secu--user">
-                <i class="fas fa-user"></i>
-
-            </div>
-            <div class="nav__secu--item">
-                <i class="fas fa-shopping-bag"></i>
-
-            </div>
- 
-        </div>
-        -->
 
     </div>
 
 
 
-    <div class="leftsidebar">
+    <div class="leftsidebar animate-nav">
         <h2 class="leftsidebar__item leftsidebar__item--1">EST 2019</h2>
         <h2 class="leftsidebar__item leftsidebar__item--2">New Arrivals</h2>
     </div>
 
     <div class="rightsidebar">
-        <ul class="rightsidebar__list">
+        <ul class="rightsidebar__list  animate-nav">
             <li class="rightsidebar__list--child rightsidebar__list--child-1"><a href="#">JOIN LIFE</a></li>
             <li class="rightsidebar__list--child rightsidebar__list--child-2"><a href="#">EDITORIALS</a></li>
             <li class="rightsidebar__list--child rightsidebar__list--child-3"><a href="#">INFO++</a></li>
@@ -141,13 +103,13 @@
 
     </div>
 
-    <footer class="footer">
+    <footer class="footer ">
         <div class="footer__blanktop"></div>
         <div class="footer__blankbot">
             <div class="footer__blankbot-iz">
                 <div class="footer__blankbot-iz-cont">
                     <div class="footer__blankbot-iz-blank"></div>
-                    <h3 class="footer__blankbot-iz-text">Subscribe to Newsletter</h3>
+                    <h3 class="footer__blankbot-iz-text animate-nav">Subscribe to Newsletter</h3>
 
                 </div>
 
@@ -155,7 +117,7 @@
             </div>
 
 
-            <div class="footer__blankbot-der">
+            <div class="footer__blankbot-der animate-nav">
                 <div class="footer__blankbot-der-cont">
                     <i class="fab fa-facebook-f icon"></i>
                     <i class="fab fa-twitter icon"></i>
@@ -170,7 +132,7 @@
         </div>
     </footer>
 
-    <div class="fondo" id="fondo">
+    <div class="fondo animate-nav" id="fondo">
         <div class="fondo__blank1">
 
             <div class="fondo__blank1-iztop"></div>
@@ -194,13 +156,13 @@
 
     <div id="fullpage">
 
-        <section class="cont">
+        <section class="cont active animate-nav">
             <div class="cont__blank"></div>
             <div class="cont__blank2">
 
                 <div class="cont__blank2-top"></div>
                 <div class="cont__blank2-middle">
-                    <h1 class="cont__blank2-middle--title"> 1. Intro</h1>
+                    <h1  class="cont__blank2-middle--title"> 1. Intro</h1>
                     <p class="cont__blank2-middle--para"> Voltio is a fresh urban fashion platform with a unique style
                         created to provide authentic services.
                     </p>
@@ -209,8 +171,8 @@
                             <li><i class="fas fa-grip-lines"></i>
                                 <ul class="drop" style="font-size:15px">
                                     <div>
-                                        <li>New Collections</li>
-                                        <li>Spring Arrivals</li>
+                                        <li class="desplegable"><a href="/tienda?category=womens">Women's Collections</a> </li>
+                                        <li class="desplegable"><a href="/tienda?category=mens">Men's Collections</a></li>
                                         <li>Featured Items</li>
                                     </div>
                                 </ul>
@@ -222,6 +184,7 @@
             </div>
             <div class="cont__blank3">
                 <div class="cont__blank3-top"></div>
+                  <div class="my_div"></div>
                 <div class="cont__blank3-middle">
                 </div>
                 <div class="cont__blank3-bottom"></div>
@@ -241,7 +204,7 @@
 
                 <div class="s2cont__blank2-top"></div>
                 <div class="s2cont__blank2-middle">
-                    <h1 class="s2cont__blank2-middle--title"> 2. Woman</h1>
+                    <h1 class="s2cont__blank2-middle--title"> 2. Women's</h1>
                     <p class="s2cont__blank2-middle--para"> Here is the latest trending apereal just a few clicks aways.
                         Navigate through our specially selected products just for you.
                     </p>
@@ -250,9 +213,10 @@
                             <li><i class="fas fa-grip-lines"></i>
                                 <ul class="drop" style="font-size:15px">
                                     <div>
-                                        <li>Basics</li>
-                                        <li>Outwear</li>
-                                        <li>Jackets</li>
+                                        <li class="desplegable"><a href="/tienda?category=womens&type=tops">Tops</a> </li>
+                                        <li class="desplegable"><a href="/tienda?category=womens&type=bottoms">Bottoms</a></li>
+                                        <li class="desplegable"><a href="/tienda?category=womens&type=dresses">Dresses</a></li>
+                                       
                                     </div>
                                 </ul>
                         </ul>
@@ -277,13 +241,13 @@
 
 
 
-        <section class="s3cont">
+        <section class="s3cont ">
             <div class="s3cont__blank"></div>
             <div class="s3cont__blank2">
 
                 <div class="s3cont__blank2-top"></div>
                 <div class="s3cont__blank2-middle">
-                    <h1 class="s3cont__blank2-middle--title"> 3. Man</h1>
+                    <h1 class="s3cont__blank2-middle--title"> 3. Men's</h1>
                     <p class="s3cont__blank2-middle--para"> Fresh outfits ready to stock up in your closet. We bring you
                         unique styles for you to rock your day.
                     </p>
@@ -292,9 +256,9 @@
                             <li><i class="fas fa-grip-lines"></i>
                                 <ul class="drop" style="font-size:15px">
                                     <div>
-                                        <li>Jeans</li>
-                                        <li>Shorts</li>
-                                        <li>Bags</li>
+                                          <li class="desplegable"><a href="/tienda?category=mens&type=tops">Tops</a> </li>
+                                        <li class="desplegable"><a href="/tienda?category=mens&type=bottoms">Bottoms</a></li>
+                                        <li class="desplegable"><a href="/tienda?category=mens&type=jackets">Jackets</a></li>
                                     </div>
                                 </ul>
                         </ul>
@@ -403,6 +367,7 @@
 
 
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
     <script type="text/javascript">
         $('#fullpage').fullpage();
@@ -410,6 +375,22 @@
 
 
     <script src="/scripts/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    var myAnimation = new hoverEffect({
+        parent: document.querySelector('.cont__blank3-middle'),
+        intensity: 0.3,
+        image1: 'imagenes/main-re.jpg',
+        image2: 'imagenes/ice2.jpg',
+        displacementImage: 'imagenes/distortion/ramen-re.jpg'
+    });
+</script>
+
+
+
+     
+      
 
 </body>
 

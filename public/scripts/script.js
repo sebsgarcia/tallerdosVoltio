@@ -1,19 +1,7 @@
-/*
-function expand() {
-    $(".search").toggleClass("close");
-    $(".input").toggleClass("square");
-    if ($('.search').hasClass('close')) {
-      $('input').focus();
-    } else {
-      $('input').blur();
-    }
-  }
-  $('button').on('click', expand);
- */
 
 function paginaCargada() {
 
-
+  AOS.init();
 
   var listaProductos = [];
 
@@ -50,11 +38,6 @@ function actualizarCarrito(){
 }
 actualizarCarrito();
 
-
-
-
-  
-
   var botones = document.querySelectorAll('.product__cart');
   function recorrerBotoner(boton) {
 
@@ -85,7 +68,6 @@ actualizarCarrito();
     function agregarAlCarritoDetalle(){
 
 
-
       var name = document.querySelector('.producto__name').innerText;
       var price = document.querySelector('.producto__price').innerText;
       var image = document.querySelector('.producto__image').src;
@@ -100,17 +82,31 @@ actualizarCarrito();
       actualizarCarrito();
       localStorage.setItem('listaProductos', JSON.stringify(listaProductos));
 
-
-
     }
     if(botonProductoDetalle != null){
 
       botonProductoDetalle.addEventListener('click', agregarAlCarritoDetalle);
     }
+
+
+
+    //Taller 3
+
+TweenMax.from(".animate-nav",1, {opacity:0, delay:1});
+
+
+
+
+
+
+//HOVER EFFECT
+
+//VANTA
+
+
+
+
   
-
-
-
 }
 
 window.addEventListener('load', paginaCargada);

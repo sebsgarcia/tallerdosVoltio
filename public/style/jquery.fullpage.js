@@ -1,6 +1,4 @@
-/*
- *	created by zhangkai on 2016/10/10 
- */
+
 ;(function(global,$){
 	
 	'use strict';
@@ -46,6 +44,7 @@
 					'height':'100vh',
 					'transition':'all 0.7s',
 					'-webkit-transition':'all 0.7s'
+					
 				});
 			},
 			bindEvent:function(){
@@ -85,13 +84,6 @@
 						estado.style.textDecoration=("none");
 					}
 
-
-					
-
-
-
-
-  
 
 
                 var fondo = document.getElementById("cambiarfondo");
