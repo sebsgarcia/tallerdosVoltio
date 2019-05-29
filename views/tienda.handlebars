@@ -41,10 +41,12 @@
                 <li class="flex-item flex-item-woman" {{#if esWomens}}style="text-decoration:line-through"
                     {{/if}}id="cambiarwoman"><a class="grid__item-link" href="/tienda?category=womens">Women's</a>
                 </li>
-                <li class="flex-item" {{#if esMens}}style="text-decoration:line-through" {{/if}} id="cambiarman"><a class="grid__item-link"
-                        href="/tienda?category=mens">Men's</a> </li>
-                <li class="flex-item flex-item-kids" id="cambiarkids"><a class="grid__item-link" href="#">Kid's</a> </li>
-                <li class="flex-item flex-item-gifts" id="cambiarsale"><a class="grid__item-link" href="#">Sale</a> </li>
+                <li class="flex-item" {{#if esMens}}style="text-decoration:line-through" {{/if}} id="cambiarman"><a
+                        class="grid__item-link" href="/tienda?category=mens">Men's</a> </li>
+                <li class="flex-item flex-item-kids" id="cambiarkids"><a class="grid__item-link" href="#">Kid's</a>
+                </li>
+                <li class="flex-item flex-item-gifts" id="cambiarsale"><a class="grid__item-link" href="#">Sale</a>
+                </li>
 
             </ul>
         </div>
@@ -94,24 +96,24 @@
             <ul class="blankspace__promo-list">
                 <a href="/tienda?category=womens&type=tops">
 
-                    <div  data-aos="fade-up" class="promo__item promo__item-1wom">
+                    <div data-aos="fade-up" class="promo__item promo__item-1wom">
                         <h1 class="promo__item-text">Tops</h1>
                     </div>
 
                 </a>
 
                 <a href="/tienda?category=womens&type=bottoms">
-                    <div  data-aos="fade-up" class="promo__item promo__item-2wom">
+                    <div data-aos="fade-up" class="promo__item promo__item-2wom">
                         <h1 class="promo__item-text">Bottoms</h1>
                     </div>
                 </a>
                 <a href="/tienda?category=womens&type=dresses">
-                    <div  data-aos="fade-up"  class="promo__item promo__item-3wom">
+                    <div data-aos="fade-up" class="promo__item promo__item-3wom">
                         <h1 class="promo__item-text">Dresses</h1>
                     </div>
                 </a>
                 <a href="/tienda?category=womens&type=jackets">
-                    <div  data-aos="fade-up" class="promo__item promo__item-4wom">
+                    <div data-aos="fade-up" class="promo__item promo__item-4wom">
                         <h1 class="promo__item-text">Jackets</h1>
                     </div>
                 </a>
@@ -168,18 +170,26 @@
                 <div class="content__left-filterbar--blank2-list">
                     <p data-aos="fade-right" class="filterbar_title">Women's</p>
                     <ul class="left__filterbarnav">
-                        <li data-aos="fade-right"><a class="grid__item-link" href="/tienda?category=womens&type=tops">Tops</a></li>
-                        <li data-aos="fade-right"><a class="grid__item-link" href="/tienda?category=womens&type=bottoms">Bottoms</a></li>
-                        <li data-aos="fade-right"><a class="grid__item-link" href="/tienda?category=womens&type=dresses">Dresses</a></li>
-                        <li data-aos="fade-right"><a class="grid__item-link" href="/tienda?category=womens&type=jackets">Jackets</a></li>
+                        <li data-aos="fade-right"><a class="grid__item-link"
+                                href="/tienda?category=womens&type=tops">Tops</a></li>
+                        <li data-aos="fade-right"><a class="grid__item-link"
+                                href="/tienda?category=womens&type=bottoms">Bottoms</a></li>
+                        <li data-aos="fade-right"><a class="grid__item-link"
+                                href="/tienda?category=womens&type=dresses">Dresses</a></li>
+                        <li data-aos="fade-right"><a class="grid__item-link"
+                                href="/tienda?category=womens&type=jackets">Jackets</a></li>
 
                     </ul>
                     <p data-aos="fade-right" class="filterbar_title">Men's</p>
                     <ul class="left__filterbarnav">
-                        <li data-aos="fade-right"><a class="grid__item-link" href="/tienda?category=mens&type=tees">Tees</a></li>
-                        <li data-aos="fade-right"><a class="grid__item-link" href="/tienda?category=mens&type=bottoms">Bottoms</a></li>
-                        <li data-aos="fade-right"><a class="grid__item-link" href="/tienda?category=mens&type=jackets">Jackets</a></li>
-                        <li data-aos="fade-right"><a class="grid__item-link" href="/tienda?category=mens&type=shoes">Shoes</a></li>
+                        <li data-aos="fade-right"><a class="grid__item-link"
+                                href="/tienda?category=mens&type=tees">Tees</a></li>
+                        <li data-aos="fade-right"><a class="grid__item-link"
+                                href="/tienda?category=mens&type=bottoms">Bottoms</a></li>
+                        <li data-aos="fade-right"><a class="grid__item-link"
+                                href="/tienda?category=mens&type=jackets">Jackets</a></li>
+                        <li data-aos="fade-right"><a class="grid__item-link"
+                                href="/tienda?category=mens&type=shoes">Shoes</a></li>
                     </ul>
                 </div>
 
@@ -213,10 +223,10 @@
 
                     <div class="label-cont">
                         <label class="label">Enter your desired price range</label>
-                       
-                            
-                            <input class="input-rango" value="{{price}}" type="range" min="10" max="250">
-          
+
+
+                        <input class="input-rango" value="{{price}}" type="range" min="10" max="250">
+
                     </div>
 
                 </div>
@@ -230,7 +240,8 @@
                 <ul class="womens__products-list">
                     {{#each productos}}
 
-                    <div  data-aos="fade-up" data-aos-duration="800" data-aos-delay="10" class="womens__products-list--item">
+                    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="10"
+                        class="womens__products-list--item">
                         <a href="/tienda/producto/{{name}}">
                             <img class="producto__image" src="{{imagenes.[1]}}" width="250px">
                             <h2 class="producto__name">{{name}}</h2>
@@ -238,7 +249,7 @@
 
                         </a>
 
-                        <a  class="product__cart bttn">Add to cart</a>
+                        <a class="product__cart bttn">Add to cart</a>
                         <!--
                         <button class="product__cart">Add to cart</button>
                         -->
@@ -255,6 +266,20 @@
 
     </div>
 
+    <footer data-aos="fade-up" data-aos-duration="800" data-aos-delay="10" class="foot-tienda">
+        <div class="foot-tienda__left">
+            <h3>Subscribe to Newsletter</h3>
+        </div>
+        <div class="foot-tienda__right">
+            <div class="foot-redes">
+                <i class="fab fa-facebook-f icon2"></i>
+                <i class="fab fa-twitter icon2"></i>
+                <i class="fab fa-instagram icon2"></i>
+                <i class="fab fa-youtube icon2"></i>
+            </div>
+        </div>
+    </footer>
+
 
 
     <script>
@@ -262,20 +287,24 @@
         var rango = document.querySelector('.input-rango');
         function buscarPorPrecio() {
 
-            {{#if esWomens}}
+            { { #if esWomens} }
             location.href = '/tienda?category=womens&price=' + rango.value;
-            {{/if}}
-            {{#if esMens}}
-             location.href = '/tienda?category=mens&price=' + rango.value;
-            {{/if}}
-             console.log(rango.value);
-            
-            } 
-             if (rango != null) {
+            {
+                {
+                    /if}}
+                    { { #if esMens} }
+                    location.href = '/tienda?category=mens&price=' + rango.value;
+                    {
+                        {
+                            /if}}
+                            console.log(rango.value);
 
-                  rango.addEventListener('change', buscarPorPrecio);
-                
-                }
+                        }
+                        if (rango != null) {
+
+                            rango.addEventListener('change', buscarPorPrecio);
+
+                        }
 
 
 
@@ -283,7 +312,7 @@
 
     <script src="/scripts/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
 
 

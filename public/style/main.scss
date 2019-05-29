@@ -2165,6 +2165,8 @@ justify-content: space-between;
      display: flex;
      flex-direction: column;
      padding: 10px;
+     pointer-events: auto;
+     cursor: pointer;
 
    }
    &-imagen{
@@ -2525,6 +2527,44 @@ a.bttn2 {
       opacity:1;
     }
   }
+}
+
+
+
+.foot-tienda{
+  width: 100%;
+  height: 150px;
+display: flex;
+justify-content: center;
+
+
+
+
+  &__left{
+width: 50%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+  }
+
+  &__right{
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+
+.icon2{
+  padding-left: 55px;
+}
+
+.body__producto{
+  overflow: hidden;
 }
 
 

@@ -23,7 +23,7 @@
 
 </head>
 
-<body>
+<body class="body__producto">
 
 
     <div class="nav">
@@ -101,19 +101,19 @@
             <div class="cont__prod-left-imagenes">
 
                 <div>
-                    <img class="producto__image1" src="{{producto.imagenes.[1]}}" width="120px" alt="">
+                    <img id="first" class="producto__image1" src="{{producto.imagenes.[1]}}" width="120px" alt="">
                 </div>
                 <div>
-                    <img class="producto__image2" src="{{producto.imagenes.[2]}}" width="120px" alt="">
+                    <img id="second" class="producto__image2" src="{{producto.imagenes.[2]}}" width="120px" alt="">
                 </div>
                 <div>
-                    <img class="producto__image3" src="{{producto.imagenes.[3]}}" width="120px" alt="">
+                    <img id="third" class="producto__image3" src="{{producto.imagenes.[3]}}" width="120px" alt="">
                 </div>
 
             </div>
             <div class="cont__prod-left-imagen">
 
-                <img class="producto__image" src="{{producto.imagenes.[0]}}" width="    366px" alt="">
+                <img id="prin" class="producto__image" src="{{producto.imagenes.[0]}}" width="    366px" alt="">
             </div>
 
 
@@ -163,6 +163,7 @@
 
 
     <script src="/scripts/script.js"></script>
+    <script src="/scripts/imgchange.js"></script>
     <script>
 VANTA.NET({
   el: "#background",
