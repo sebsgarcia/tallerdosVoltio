@@ -61,24 +61,24 @@
 
 
 					var estado = document.getElementById("cambiarwoman");
-					if(targetIndex === 1){
-						estado.style.textDecoration=("line-through");
-					} else{
-						estado.style.textDecoration=("none");
-					}
-					var estado = document.getElementById("cambiarman");
 					if(targetIndex === 2){
 						estado.style.textDecoration=("line-through");
 					} else{
 						estado.style.textDecoration=("none");
 					}
-					var estado = document.getElementById("cambiarkids");
+					var estado = document.getElementById("cambiarman");
 					if(targetIndex === 3){
 						estado.style.textDecoration=("line-through");
 					} else{
 						estado.style.textDecoration=("none");
-					}var estado = document.getElementById("cambiarsale");
+					}
+					var estado = document.getElementById("cambiarkids");
 					if(targetIndex === 4){
+						estado.style.textDecoration=("line-through");
+					} else{
+						estado.style.textDecoration=("none");
+					}var estado = document.getElementById("cambiarsale");
+					if(targetIndex === 5){
 						estado.style.textDecoration=("line-through");
 					} else{
 						estado.style.textDecoration=("none");

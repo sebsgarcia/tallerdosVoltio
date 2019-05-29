@@ -20,10 +20,10 @@
     <script src="style/jquery.fullpage.js"></script>
 
     <script src="/scripts/three.min.js"></script>
-	<script src="/scripts/TweenMax.min.js"></script>
-	<script src="/scripts/hover-effect.umd.js"></script>
+    <script src="/scripts/TweenMax.min.js"></script>
+    <script src="/scripts/hover-effect.umd.js"></script>
     <script src="/scripts/three.r92.min.js"></script>
-<script src="/scripts/vanta.birds.min.js"></script>
+    <script src="/scripts/vanta.birds.min.js"></script>
 
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Playfair+Display:900i" rel="stylesheet">
@@ -53,11 +53,11 @@
         <div class="nav__blank--list">
 
             <ul class="flex-container animate-nav">
-                <li class="flex-item flex-item-woman" id="cambiarwoman"><a href="/tienda?category=womens">Women's</a>
+                <li class="flex-item flex-item-woman" id="cambiarwoman"><a class="grid__item-link" href="/tienda?category=womens">Women's</a>
                 </li>
-                <li class="flex-item" id="cambiarman"><a href="/tienda?category=mens">Men's</a> </li>
-                <li class="flex-item flex-item-kids" id="cambiarkids"><a href="#">Kid's</a> </li>
-                <li class="flex-item flex-item-gifts" id="cambiarsale"><a href="#">Sale</a> </li>
+                <li class="flex-item" id="cambiarman"><a class="grid__item-link" href="/tienda?category=mens">Men's</a> </li>
+                <li class="flex-item flex-item-kids" id="cambiarkids"><a class="grid__item-link" href="#">Kid's</a> </li>
+                <li class="flex-item flex-item-gifts" id="cambiarsale"><a class="grid__item-link" href="#">Sale</a> </li>
 
             </ul>
         </div>
@@ -157,8 +157,16 @@
 
 
     <div id="fullpage">
-          <section class="cont active animate-nav">
-            <div id="birds" class="birds"></div>
+        <section class="cont active animate-nav">
+            <div id="birds" class="birds">
+
+                <div class="birds__blank">
+                    <h3 class="birds__title">SPRING IS HERE</h3>
+                    <h1 class="birds__description">Dress for it.</h1>
+                
+                </div>
+            </div>
+
         </section>
 
 
@@ -168,7 +176,7 @@
 
                 <div class="cont__blank2-top"></div>
                 <div class="cont__blank2-middle">
-                    <h1  class="cont__blank2-middle--title"> 1. Intro</h1>
+                    <h1 class="cont__blank2-middle--title"> 1. Intro</h1>
                     <p class="cont__blank2-middle--para"> Voltio is a fresh urban fashion platform with a unique style
                         created to provide authentic services.
                     </p>
@@ -177,8 +185,10 @@
                             <li><i class="fas fa-grip-lines"></i>
                                 <ul class="drop" style="font-size:15px">
                                     <div>
-                                        <li class="desplegable"><a href="/tienda?category=womens">Women's Collections</a> </li>
-                                        <li class="desplegable"><a href="/tienda?category=mens">Men's Collections</a></li>
+                                        <li class="desplegable"><a class="grid__item-link" href="/tienda?category=womens">Women's
+                                                Collections</a> </li>
+                                        <li class="desplegable"><a class="grid__item-link" href="/tienda?category=mens">Men's Collections</a>
+                                        </li>
                                         <li>Featured Items</li>
                                     </div>
                                 </ul>
@@ -190,7 +200,7 @@
             </div>
             <div class="cont__blank3">
                 <div class="cont__blank3-top"></div>
-                  <div class="my_div"></div>
+                <div class="my_div"></div>
                 <div class="cont__blank3-middle">
                 </div>
                 <div class="cont__blank3-bottom"></div>
@@ -219,10 +229,13 @@
                             <li><i class="fas fa-grip-lines"></i>
                                 <ul class="drop" style="font-size:15px">
                                     <div>
-                                        <li class="desplegable"><a href="/tienda?category=womens&type=tops">Tops</a> </li>
-                                        <li class="desplegable"><a href="/tienda?category=womens&type=bottoms">Bottoms</a></li>
-                                        <li class="desplegable"><a href="/tienda?category=womens&type=dresses">Dresses</a></li>
-                                       
+                                        <li class="desplegable"><a class="grid__item-link" href="/tienda?category=womens&type=tops">Tops</a>
+                                        </li>
+                                        <li class="desplegable"><a class="grid__item-link"
+                                                href="/tienda?category=womens&type=bottoms">Bottoms</a></li>
+                                        <li class="desplegable"><a class="grid__item-link"
+                                                href="/tienda?category=womens&type=dresses">Dresses</a></li>
+
                                     </div>
                                 </ul>
                         </ul>
@@ -262,9 +275,11 @@
                             <li><i class="fas fa-grip-lines"></i>
                                 <ul class="drop" style="font-size:15px">
                                     <div>
-                                          <li class="desplegable"><a href="/tienda?category=mens&type=tops">Tops</a> </li>
-                                        <li class="desplegable"><a href="/tienda?category=mens&type=bottoms">Bottoms</a></li>
-                                        <li class="desplegable"><a href="/tienda?category=mens&type=jackets">Jackets</a></li>
+                                        <li class="desplegable"><a class="grid__item-link" href="/tienda?category=mens&type=tops">Tops</a> </li>
+                                        <li class="desplegable"><a class="grid__item-link" href="/tienda?category=mens&type=bottoms">Bottoms</a>
+                                        </li>
+                                        <li class="desplegable"><a class="grid__item-link" href="/tienda?category=mens&type=jackets">Jackets</a>
+                                        </li>
                                     </div>
                                 </ul>
                         </ul>
@@ -383,30 +398,30 @@
     <script src="/scripts/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<script>
-    var myAnimation = new hoverEffect({
-        parent: document.querySelector('.cont__blank3-middle'),
-        intensity: 0.3,
-        image1: 'imagenes/main-re.jpg',
-        image2: 'imagenes/ice2.jpg',
-        displacementImage: 'imagenes/distortion/ramen-re.jpg'
-    });
-</script>
-<script>
-VANTA.BIRDS({
-  el: "#birds",
-  backgroundColor: 0xffffff,
-  color1: 0xffbfbf,
-  color2: 0xf78d56,
-  colorMode: "lerpGradient",
-  backgroundAlpha: 0.00
-})
-</script>
+    <script>
+        var myAnimation = new hoverEffect({
+            parent: document.querySelector('.cont__blank3-middle'),
+            intensity: 0.3,
+            image1: 'imagenes/main-re.jpg',
+            image2: 'imagenes/ice2.jpg',
+            displacementImage: 'imagenes/distortion/ramen-re.jpg'
+        });
+    </script>
+    <script>
+        VANTA.BIRDS({
+            el: "#birds",
+            backgroundColor: 0xffffff,
+            color1: 0xffbfbf,
+            color2: 0xf78d56,
+            colorMode: "lerpGradient",
+            backgroundAlpha: 0.00
+        })
+    </script>
 
 
 
-     
-      
+
+
 
 </body>
 

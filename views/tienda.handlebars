@@ -19,7 +19,7 @@
 
 <body>
 
-    <div class="nav">
+    <div data-aos="fade" class="nav">
         <div class="nav__blank--left">
             <div class="nav__blank--left-space">
                 <div class="nav__blank--left-title">
@@ -39,12 +39,12 @@
 
             <ul class="flex-container">
                 <li class="flex-item flex-item-woman" {{#if esWomens}}style="text-decoration:line-through"
-                    {{/if}}id="cambiarwoman"><a href="/tienda?category=womens">Women's</a>
+                    {{/if}}id="cambiarwoman"><a class="grid__item-link" href="/tienda?category=womens">Women's</a>
                 </li>
-                <li class="flex-item" {{#if esMens}}style="text-decoration:line-through" {{/if}} id="cambiarman"><a
+                <li class="flex-item" {{#if esMens}}style="text-decoration:line-through" {{/if}} id="cambiarman"><a class="grid__item-link"
                         href="/tienda?category=mens">Men's</a> </li>
-                <li class="flex-item flex-item-kids" id="cambiarkids"><a href="#">Kid's</a> </li>
-                <li class="flex-item flex-item-gifts" id="cambiarsale"><a href="#">Sale</a> </li>
+                <li class="flex-item flex-item-kids" id="cambiarkids"><a class="grid__item-link" href="#">Kid's</a> </li>
+                <li class="flex-item flex-item-gifts" id="cambiarsale"><a class="grid__item-link" href="#">Sale</a> </li>
 
             </ul>
         </div>
@@ -168,18 +168,18 @@
                 <div class="content__left-filterbar--blank2-list">
                     <p data-aos="fade-right" class="filterbar_title">Women's</p>
                     <ul class="left__filterbarnav">
-                        <li data-aos="fade-right"><a href="/tienda?category=womens&type=tops">Tops</a></li>
-                        <li data-aos="fade-right"><a href="/tienda?category=womens&type=bottoms">Bottoms</a></li>
-                        <li data-aos="fade-right"><a href="/tienda?category=womens&type=dresses">Dresses</a></li>
-                        <li data-aos="fade-right"><a href="/tienda?category=womens&type=jackets">Jackets</a></li>
+                        <li data-aos="fade-right"><a class="grid__item-link" href="/tienda?category=womens&type=tops">Tops</a></li>
+                        <li data-aos="fade-right"><a class="grid__item-link" href="/tienda?category=womens&type=bottoms">Bottoms</a></li>
+                        <li data-aos="fade-right"><a class="grid__item-link" href="/tienda?category=womens&type=dresses">Dresses</a></li>
+                        <li data-aos="fade-right"><a class="grid__item-link" href="/tienda?category=womens&type=jackets">Jackets</a></li>
 
                     </ul>
                     <p data-aos="fade-right" class="filterbar_title">Men's</p>
                     <ul class="left__filterbarnav">
-                        <li data-aos="fade-right"><a href="/tienda?category=mens&type=tees">Tees</a></li>
-                        <li data-aos="fade-right"><a href="/tienda?category=mens&type=bottoms">Bottoms</a></li>
-                        <li data-aos="fade-right"><a href="/tienda?category=mens&type=jackets">Jackets</a></li>
-                        <li data-aos="fade-right"><a href="/tienda?category=mens&type=shoes">Shoes</a></li>
+                        <li data-aos="fade-right"><a class="grid__item-link" href="/tienda?category=mens&type=tees">Tees</a></li>
+                        <li data-aos="fade-right"><a class="grid__item-link" href="/tienda?category=mens&type=bottoms">Bottoms</a></li>
+                        <li data-aos="fade-right"><a class="grid__item-link" href="/tienda?category=mens&type=jackets">Jackets</a></li>
+                        <li data-aos="fade-right"><a class="grid__item-link" href="/tienda?category=mens&type=shoes">Shoes</a></li>
                     </ul>
                 </div>
 
@@ -237,7 +237,11 @@
                             <p class="producto__price">${{price}}</p>
 
                         </a>
+
+                        <a  class="product__cart bttn">Add to cart</a>
+                        <!--
                         <button class="product__cart">Add to cart</button>
+                        -->
                     </div>
 
                     {{/each}}
