@@ -10,17 +10,17 @@ var assert = require('assert');
 
 
 //Conection URL
-const url = 'mongodb://localhost:27017';
+//const url = 'mongodb://localhost:27017';
 const dbName = 'voltio';
 
 //Create Clietn Object
-const client = new MongoClient(url, { useNewUrlParser: true });
+//const client = new MongoClient(url, { useNewUrlParser: true });
 
 
 var db = null;
 
 
-client.connect(`mongodb+srv://sebs_garcia:<password>@cluster0-mggqy.mongodb.net/test?retryWrites=true&w=majority`,{
+MongoClient.connect(`mongodb+srv://sebs_garcia:<password>@cluster0-mggqy.mongodb.net/test?retryWrites=true&w=majority`,{
     auth: {
         user: 'sebs_garcia',
         password: '!stuart97'
