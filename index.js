@@ -20,6 +20,22 @@ const client = new MongoClient(url, { useNewUrlParser: true });
 var db = null;
 
 
+client.connect(`mongodb+srv://sebs_garcia:<password>@cluster0-mggqy.mongodb.net/test?retryWrites=true&w=majority`,{
+    auth: {
+        user: 'sebs_garcia',
+        password: '!stuart97'
+    }
+},
+function(err, client){
+    if(err) throw err;
+    db = client.db(dbName);
+
+    app.listen(process.env.POR || 1234);
+}
+    
+);
+
+/*
 
 //connect 
 client.connect(function (err) {
@@ -32,7 +48,7 @@ client.connect(function (err) {
 //    client.close();
 
 });
-
+*/
 //Definir la carpeta public
 app.use(express.static (__dirname +'/public'));
 //para registrar el motor de render de handlebars
