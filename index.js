@@ -10,23 +10,31 @@ var assert = require('assert');
 
 
 //Conection URL
-//const url = 'mongodb://localhost:27017';
+const url = 'mongodb://localhost:27017';
 //const url = 'mongodb+srv://cluster0-mggqy.mongodb.net/tienda';
-const dbName = 'voltio';
+const dbName = 'tienda';
 
 //Create Clietn Object
-//const client = new MongoClient(url, { useNewUrlParser: true });
+const client = new MongoClient(url, { useNewUrlParser: true });
 
 
 var db = null;
 
+client.connect(function(err){
+    assert.equal(null, err);
+    db = client.db(dbName);
 
-MongoClient.connect(`mongodb+srv://cluster0-mggqy.mongodb.net/tienda`,{
+});
+
+
+MongoClient.connect(`mongodb+srv://cluster0-mggqy.mongodb.net/tienda`,
+{
     auth: {
         user: 'sebs_garcia',
         password: '!Kira971129'
     }
 },
+
 function(err, client){
     if(err) throw err;
     
