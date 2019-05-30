@@ -14,21 +14,21 @@ var assert = require('assert');
 const dbName = 'voltio';
 
 //Create Clietn Object
-//const client = new MongoClient(url, { useNewUrlParser: true });
+const client = new MongoClient(url, { useNewUrlParser: true });
 
 
 var db = null;
 
 
-MongoClient.connect(`mongodb+srv://sebs_garcia:<password>@cluster0-mggqy.mongodb.net/test?retryWrites=true&w=majority`,{
+client.connect(`mongodb+srv://cluster0-mggqy.mongodb.net/tienda`,{
     auth: {
         user: 'sebs_garcia',
-        password: '!stuart97'
+        password: '!Kira971129'
     }
 },
 function(err, client){
     if(err) throw err;
-    db = client.db(dbName);
+    db = client.db('tienda');
 
     app.listen(process.env.POR || 1234);
 }
