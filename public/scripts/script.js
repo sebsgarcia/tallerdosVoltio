@@ -108,10 +108,6 @@ TweenMax.from(".animate-nav",1, {opacity:0, delay:1});
 
 
 
-//HOVER EFFECT
-
-//VANTA
-
 
 
 

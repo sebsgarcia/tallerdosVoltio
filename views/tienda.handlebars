@@ -97,7 +97,13 @@
                 <a href="/tienda?category=womens&type=tops">
 
                     <div data-aos="fade-up" class="promo__item promo__item-1wom">
-                        <h1 class="promo__item-text">Tops</h1>
+                        <div>
+                            <!--
+  <h1 class="promo__item-text">Tops</h1>
+-->
+                        <img src="../imagenes/item5-re.jpg" alt="">
+                        </div>
+                      
                     </div>
 
                 </a>
@@ -243,7 +249,14 @@
                     <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="10"
                         class="womens__products-list--item">
                         <a href="/tienda/producto/{{name}}">
+
+
+                        
                             <img class="producto__image" src="{{imagenes.[1]}}" width="250px">
+                           
+
+
+
                             <h2 class="producto__name">{{name}}</h2>
                             <p class="producto__price">${{price}}</p>
 
@@ -287,24 +300,20 @@
         var rango = document.querySelector('.input-rango');
         function buscarPorPrecio() {
 
-            { { #if esWomens} }
+            {{#if esWomens}}
             location.href = '/tienda?category=womens&price=' + rango.value;
-            {
-                {
-                    /if}}
-                    { { #if esMens} }
-                    location.href = '/tienda?category=mens&price=' + rango.value;
-                    {
-                        {
-                            /if}}
-                            console.log(rango.value);
+            {{/if}}
+            {{#if esMens}}
+             location.href = '/tienda?category=mens&price=' + rango.value;
+            {{/if}}
+             console.log(rango.value);
 
-                        }
-                        if (rango != null) {
+             }
+             if (rango != null) {
 
-                            rango.addEventListener('change', buscarPorPrecio);
+             rango.addEventListener('change', buscarPorPrecio);
 
-                        }
+             }
 
 
 
@@ -313,7 +322,7 @@
     <script src="/scripts/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-
+  
 
 
 </body>

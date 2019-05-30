@@ -18,7 +18,7 @@
 
 
     <script src="/scripts/three.r92.min.js"></script>
-<script src="/scripts/vanta.net.min.js"></script>
+    <script src="/scripts/vanta.net.min.js"></script>
 
 
 </head>
@@ -45,11 +45,14 @@
         <div class="nav__blank--list">
 
             <ul class="flex-container">
-                <li class="flex-item flex-item-woman" id="cambiarwoman"><a class="grid__item-link" href="/tienda?category=womens">Woman</a>
+                <li class="flex-item flex-item-woman" id="cambiarwoman"><a class="grid__item-link"
+                        href="/tienda?category=womens">Woman</a>
                 </li>
-                <li class="flex-item" id="cambiarman"><a class="grid__item-link" href="/tienda?category=mens">Man</a> </li>
+                <li class="flex-item" id="cambiarman"><a class="grid__item-link" href="/tienda?category=mens">Man</a>
+                </li>
                 <li class="flex-item flex-item-kids" id="cambiarkids"><a class="grid__item-link" href="#">Kids</a> </li>
-                <li class="flex-item flex-item-gifts" id="cambiarsale"><a class="grid__item-link" href="#">Sale</a> </li>
+                <li class="flex-item flex-item-gifts" id="cambiarsale"><a class="grid__item-link" href="#">Sale</a>
+                </li>
 
             </ul>
         </div>
@@ -113,7 +116,12 @@
             </div>
             <div class="cont__prod-left-imagen">
 
-                <img id="prin" class="producto__image" src="{{producto.imagenes.[0]}}" width="    366px" alt="">
+                <img id="prin" class="producto__image main-img" src="{{producto.imagenes.[0]}}" width="    366px" alt="">
+              
+                <div id="zoom">
+                    <img id="zoom-img" />
+                </div>
+
             </div>
 
 
@@ -126,18 +134,18 @@
                 <h1 class="producto__name">{{producto.name}}</h1>
                 <div>
                     <p class="producto__desc">Price:</p>
-                <p class="producto__price">${{producto.price}}</p>
+                    <p class="producto__price">${{producto.price}}</p>
                 </div>
                 <div class="size">
-                    <div >
+                    <div>
                         <p class="producto__desc">Size:</p>
                     </div>
                     <div class="size_list">
 
-                    <p class="producto__desc">XS</p>
-                    <p class="producto__desc">S</p>
-                    <p class="producto__desc">M</p>
-                    <p class="producto__desc">L</p>
+                        <p class="producto__desc">XS</p>
+                        <p class="producto__desc">S</p>
+                        <p class="producto__desc">M</p>
+                        <p class="producto__desc">L</p>
                     </div>
 
                 </div>
@@ -148,9 +156,9 @@
                 </div>
 
 
-                  <a  class="product-detail__cart bttn2">Add to cart</a>
+                <a class="product-detail__cart bttn2">Add to cart</a>
 
-               <!--
+                <!--
                     <button class="product-detail__cart">Add to cart</button>
 -->
             </div>
@@ -160,20 +168,23 @@
     </div>
 
 
-
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
     <script src="/scripts/script.js"></script>
     <script src="/scripts/imgchange.js"></script>
+    <script src="/scripts/zoom.js"></script>
     <script>
-VANTA.NET({
-  el: "#background",
-  color: 0xd4d4d4,
-  backgroundColor: 0xffffff,
-  maxDistance: 17.00,
-  spacing: 14.00,
-  showDots: false
-})
-</script>
+        VANTA.NET({
+            el: "#background",
+            color: 0xd4d4d4,
+            backgroundColor: 0xffffff,
+            maxDistance: 17.00,
+            spacing: 14.00,
+            showDots: false
+        })
+    </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+
 
 
 </body>
