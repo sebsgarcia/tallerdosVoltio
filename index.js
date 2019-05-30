@@ -3,11 +3,9 @@ const hbs = require('express-handlebars');
 const app = express();
 
 
-//instalar Mongo
+
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
-
-
 
 //Conection URL
 const url = 'mongodb://localhost:27017';
@@ -45,20 +43,6 @@ function(err, client){
     
 );
 
-/*
-
-//connect 
-client.connect(function (err) {
-    assert.equal(null, err);
-    console.log("Conecto a la base de datos");
-
-    //Conect to database
-     db = client.db(dbName);
-
-//    client.close();
-
-});
-*/
 //Definir la carpeta public
 app.use(express.static (__dirname +'/public'));
 //para registrar el motor de render de handlebars
