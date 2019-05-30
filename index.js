@@ -11,6 +11,7 @@ var assert = require('assert');
 
 //Conection URL
 //const url = 'mongodb://localhost:27017';
+const url = 'mongodb+srv://cluster0-mggqy.mongodb.net/tienda';
 const dbName = 'voltio';
 
 //Create Clietn Object
