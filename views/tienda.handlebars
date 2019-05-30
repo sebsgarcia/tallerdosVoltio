@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+         <script src="/scripts/three.min.js"></script>
+        <script src="/scripts/TweenMax.min.js"></script>
+          <script src="/scripts/three.r92.min.js"></script>
+        <script src="/scripts/hover-effect.umd.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Playfair+Display:900i" rel="stylesheet">
 </head>
 
@@ -99,9 +104,11 @@
                     <div data-aos="fade-up" class="promo__item promo__item-1wom">
                         <div>
                             <!--
-  <h1 class="promo__item-text">Tops</h1>
--->
-                        <img src="../imagenes/item5-re.jpg" alt="">
+                          <h1 class="promo__item-text">Tops</h1>
+                           
+                        <img class="distort_tops-w" src="../imagenes/item5-re.jpg" alt="">
+
+                         -->
                         </div>
                       
                     </div>
@@ -110,17 +117,24 @@
 
                 <a href="/tienda?category=womens&type=bottoms">
                     <div data-aos="fade-up" class="promo__item promo__item-2wom">
+                        <!--
                         <h1 class="promo__item-text">Bottoms</h1>
+
+                        -->
                     </div>
                 </a>
                 <a href="/tienda?category=womens&type=dresses">
                     <div data-aos="fade-up" class="promo__item promo__item-3wom">
+                        <!--
                         <h1 class="promo__item-text">Dresses</h1>
+                        -->
                     </div>
                 </a>
                 <a href="/tienda?category=womens&type=jackets">
                     <div data-aos="fade-up" class="promo__item promo__item-4wom">
+                        <!--
                         <h1 class="promo__item-text">Jackets</h1>
+                        -->
                     </div>
                 </a>
 
@@ -139,22 +153,34 @@
             <ul data-aos="fade-up" class="blankspace__promo-list">
                 <a href="/tienda?category=mens&type=tees">
                     <div class="promo__item promo__item-1men">
+                        <!-- 
+
                         <h1 class="promo__item-text">Tees</h1>
+                        -->
                     </div>
                 </a>
                 <a href="/tienda?category=mens&type=bottoms">
                     <div class="promo__item promo__item-2men">
+                         <!-- 
+
                         <h1 class="promo__item-text">Bottoms</h1>
+                         -->
                     </div>
                 </a>
                 <a href="/tienda?category=mens&type=jackets">
                     <div class="promo__item promo__item-3men">
+                         <!-- 
+
                         <h1 class="promo__item-text">Jackets</h1>
+                         -->
                     </div>
                 </a>
                 <a href="/tienda?category=mens&type=shoes">
                     <div class="promo__item promo__item-4men">
+                         <!-- 
+
                         <h1 class="promo__item-text">Shoes</h1>
+                         -->
                     </div>
                 </a>
 
@@ -316,10 +342,73 @@
 
 
     </script>
-<script src="/scripts/animation.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="/scripts/animation.js"></script>
     <script src="/scripts/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+
+     <script>
+        var myAnimationTopsW = new hoverEffect({
+            parent: document.querySelector('.promo__item-1wom'),
+            intensity: 0.3,
+            image1: 'imagenes/item5-re.jpg',
+            image2: 'imagenes/item5-re-back.jpg',
+            displacementImage: 'imagenes/distortion/fluid-re.jpg'
+        });
+          var myAnimationBottomsW = new hoverEffect({
+            parent: document.querySelector('.promo__item-2wom'),
+            intensity: 0.3,
+            image1: 'imagenes/item4-re.jpg',
+            image2: 'imagenes/item4-re-back.jpg',
+            displacementImage: 'imagenes/distortion/fluid-re.jpg'
+        });
+           var myAnimationDressesW = new hoverEffect({
+            parent: document.querySelector('.promo__item-3wom'),
+            intensity: 0.3,
+            image1: 'imagenes/item7-re.jpg',
+            image2: 'imagenes/item7-re-back.jpg',
+            displacementImage: 'imagenes/distortion/fluid-re.jpg'
+        });
+           var myAnimationJacketsW = new hoverEffect({
+            parent: document.querySelector('.promo__item-4wom'),
+            intensity: 0.3,
+            image1: 'imagenes/item1-re-front.jpg',
+            image2: 'imagenes/item1-re.jpg',
+            displacementImage: 'imagenes/distortion/fluid-re.jpg'
+        });
+          var myAnimationTees = new hoverEffect({
+            parent: document.querySelector('.promo__item-1men'),
+            intensity: 0.3,
+            image1: 'imagenes/mens1-re-front.jpg',
+            image2: 'imagenes/mens1-re.jpg',
+            displacementImage: 'imagenes/distortion/stripe1.jpg'
+        });
+         var myAnimationBottomsM = new hoverEffect({
+            parent: document.querySelector('.promo__item-2men'),
+            intensity: 0.3,
+            image1: 'imagenes/mens2.jpg',
+            image2: 'imagenes/mens2-re-back.jpg',
+            displacementImage: 'imagenes/distortion/stripe1.jpg'
+        });
+         var myAnimationJacketsM = new hoverEffect({
+            parent: document.querySelector('.promo__item-3men'),
+            intensity: 0.3,
+            image1: 'imagenes/mens3-re.jpg',
+            image2: 'imagenes/mens3-re-back.jpg',
+            displacementImage: 'imagenes/distortion/stripe1.jpg'
+        });
+          var myAnimationShoes = new hoverEffect({
+            parent: document.querySelector('.promo__item-4men'),
+            intensity: 0.3,
+            image1: 'imagenes/mens4-re.jpg',
+            image2: 'imagenes/mens4-re-back.jpg',
+            displacementImage: 'imagenes/distortion/stripe1.jpg'
+        });
+        
+    </script>
   
 
 
