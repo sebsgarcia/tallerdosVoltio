@@ -11,17 +11,17 @@ var assert = require('assert');
 
 //Conection URL
 //const url = 'mongodb://localhost:27017';
-const url = 'mongodb+srv://cluster0-mggqy.mongodb.net/tienda';
+//const url = 'mongodb+srv://cluster0-mggqy.mongodb.net/tienda';
 const dbName = 'voltio';
 
 //Create Clietn Object
-const client = new MongoClient(url, { useNewUrlParser: true });
+//const client = new MongoClient(url, { useNewUrlParser: true });
 
 
 var db = null;
 
 
-client.connect(`mongodb+srv://cluster0-mggqy.mongodb.net/tienda`,{
+MongoClient.connect(`mongodb+srv://cluster0-mggqy.mongodb.net/tienda`,{
     auth: {
         user: 'sebs_garcia',
         password: '!Kira971129'
@@ -29,6 +29,7 @@ client.connect(`mongodb+srv://cluster0-mggqy.mongodb.net/tienda`,{
 },
 function(err, client){
     if(err) throw err;
+    
     db = client.db('tienda');
 
     app.listen(process.env.POR || 1234);
