@@ -38,7 +38,7 @@ function(err, client){
     
     db = client.db('tienda');
 
-    app.listen(process.env.POR || 5000);
+    app.listen(process.env.PORT || 5000);
 }
     
 );
