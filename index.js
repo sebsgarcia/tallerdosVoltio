@@ -38,7 +38,7 @@ function(err, client){
     
     db = client.db('tienda');
 
-    app.listen(process.env.POR || 1234);
+    app.listen(process.env.POR || 5000);
 }
     
 );
@@ -148,7 +148,8 @@ app.post('/pago', function(request, response){
 });
 
 
-
+/*
 app.listen(5000, function () {
     console.log('Cargo');
 });
+*/
