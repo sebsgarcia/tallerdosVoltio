@@ -17,13 +17,13 @@ const client = new MongoClient(url, { useNewUrlParser: true });
 
 
 var db = null;
-
+/*
 client.connect(function(err){
     assert.equal(null, err);
     db = client.db(dbName);
 
 });
-
+*/
 
 MongoClient.connect(`mongodb+srv://cluster0-mggqy.mongodb.net/tienda`,
 {
